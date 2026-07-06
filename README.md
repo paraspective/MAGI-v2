@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # MAGI
 
@@ -805,5 +805,3 @@ make          # or: pdflatex main.tex && bibtex main && pdflatex main.tex && pdf
 
 MAGI — Multispectral Autonomous Ground Intelligence  
 Custom-built autonomous robotics platform for edge AI inference and quadruped locomotion.
-]]>
-
