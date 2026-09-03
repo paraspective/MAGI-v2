@@ -1,55 +1,77 @@
-# MAGI Quadruped Locomotion Simulator
+# MAGI Simulation & Robotics Architecture
 
-Browser-based 3D simulation and evaluation environment for the 12-DOF quadruped robot. Used to test kinematics, gait generation, genetic-algorithm-based locomotion policies, and decision logic overrides.
-
----
-
-## Quick Start (Web Simulator)
-
-1. Start the HTTP server:
-   ```bash
-   cd simulation
-   python3 -m http.server 8765
-   ```
-2. Open `http://localhost:8765` in your browser.
-
-*For setup issues, see the troubleshooting section in [Guide.md](file:///home/aki/Downloads/MAGI/simulation/Guide.md#troubleshooting).*
+This directory houses the simulation environments, analytical kinematics solvers, locomotion algorithms, 3D robot models, and web-based interactive dashboards for the MAGI quadruped robot.
 
 ---
 
-## Interface Tabs
+## Directory Organization
 
-* **Locomotion Sim**: 3D viewport of the robot walking. Supports Crawl, Trot, Gallop, Bound, and Stand modes with adjustable stride, clearance, pitch/roll, and terrain roughness.
-* **RL Gait Training**: Runs a genetic algorithm directly in the browser to evolve gait parameters or weights for an 8-16-12 feedforward neural network (NNPolicy).
-* **Decision Fusion**: Tests the rule-based decision logic overrides (ToF and anomaly sensor inputs) in real-time.
-* **Gait Analysis**: Plots joint energy consumption, step phase timing diagrams, and top-down foot path traces.
-* **Kinematics Math**: Interactive 2D coordinate solver using the leg Inverse Kinematics equations.
-
----
-
-## File Structure
-
-* **[index.html](file:///home/aki/Downloads/MAGI/simulation/index.html)**: Main page and sidebar dashboard.
-* **[style.css](file:///home/aki/Downloads/MAGI/simulation/style.css)**: Stylesheet and dark layout definitions.
-* **[dashboard.js](file:///home/aki/Downloads/MAGI/simulation/dashboard.js)**: Main 60fps coordination loop.
-* **[robot.js](file:///home/aki/Downloads/MAGI/simulation/robot.js)**: Three.js viewport configuration and IK solver.
-* **[gait.js](file:///home/aki/Downloads/MAGI/simulation/gait.js)**: Cubic Bezier foot trajectory generator.
-* **[rl_train.js](file:///home/aki/Downloads/MAGI/simulation/rl_train.js)**: Genetic algorithm implementation.
-* **[magi_fusion.js](file:///home/aki/Downloads/MAGI/simulation/magi_fusion.js)**: Decision engine simulation rules.
-* **[SpiderQ.urdf](file:///home/aki/Downloads/MAGI/simulation/SpiderQ.urdf)** / **[SpiderQ.glb](file:///home/aki/Downloads/MAGI/simulation/SpiderQ.glb)**: Robot geometry and 3D meshes.
-* **[Guide.md](file:///home/aki/Downloads/MAGI/simulation/Guide.md)**: Detailed documentation of mathematical equations and variables.
-
----
-
-## PyBullet Physics Simulation
-
-For rigid-body physics tests, run the standalone Python scripts (requires `pybullet` and `numpy`):
-
-```bash
-pip install pybullet numpy
-python3 demo_pybullet.py
+```text
+simulation/
+├── models/
+│   ├── urdf/
+│   │   └── SpiderQ.urdf          # 12-DOF Quadruped URDF model definition
+│   └── meshes/
+│       └── SpiderQ.glb           # 3D robot geometry mesh (GLB format)
+│
+├── python/
+│   ├── kinematics/
+│   │   ├── ik.py                 # Analytical 3-DOF inverse kinematics solver (LegIK3DOF)
+│   │   └── fk.py                 # Forward kinematics reference module
+│   │
+│   ├── locomotion/
+│   │   ├── gait.py               # Parametric stance/swing foot trajectory generator
+│   │   └── MAGI_gait_learning.py # Crawl gait learning with terrain adaptation & noise injection
+│   │
+│   ├── pybullet/
+│   │   ├── demo_pybullet.py      # PyBullet physics simulation environment loading SpiderQ
+│   │   └── main.py               # Locomotion stepping loop and IK angle calculations
+│   │
+│   └── visualization/
+│       ├── visualize_2D.py       # 2D Matplotlib sagittal & top-down leg animation
+│       └── Visualize_3D.py       # Real-time 3D Matplotlib crawl gait animation
+│
+└── web/
+    ├── index.html                # Main web simulation dashboard interface
+    ├── style.css                 # Dark theme layout and responsive styles
+    ├── dashboard.js              # 60 FPS animation & telemetry coordination loop
+    ├── robot.js                  # Three.js 3D viewport renderer & IK solver
+    ├── gait.js                   # Cubic Bezier foot trajectory generator
+    ├── rl_train.js               # In-browser genetic algorithm gait optimizer
+    ├── magi_fusion.js            # Decision engine & sensor fusion override logic
+    ├── debug.html                # Component diagnostics interface
+    ├── magi_standalone.html      # Bundled single-page offline simulator
+    └── lib/
+        ├── three.min.js          # Three.js 3D library
+        ├── OrbitControls.js      # Three.js camera control
+        └── chart.min.js          # Chart.js telemetry plotting library
 ```
 
-* **[demo_pybullet.py](file:///home/aki/Downloads/MAGI/simulation/demo_pybullet.py)**: Loads URDF into PyBullet to test active gait patterns.
-* **[ik.py](file:///home/aki/Downloads/MAGI/simulation/ik.py)** / **[fk.py](file:///home/aki/Downloads/MAGI/simulation/fk.py)**: Reference Python kinematics solvers.
-* **[MAGI_gait_learning.py](file:///home/aki/Downloads/MAGI/simulation/MAGI_gait_learning.py)**: Standalone reinforcement learning python code.
+---
+
+## Quick Start Guide
+
+### 1. Web Simulator
+To launch the browser-based 3D simulation:
+```bash
+cd simulation/web
+python -m http.server 8765
+```
+Open `http://localhost:8765` in your browser.
+
+### 2. Python Physics Simulation (PyBullet)
+```bash
+pip install pybullet numpy
+python simulation/python/pybullet/demo_pybullet.py
+```
+
+### 3. Matplotlib 3D Gait Visualization
+```bash
+pip install matplotlib numpy
+python simulation/python/visualization/Visualize_3D.py
+```
+
+### 4. Reinforcement / Gait Learning Script
+```bash
+python simulation/python/locomotion/MAGI_gait_learning.py
+```

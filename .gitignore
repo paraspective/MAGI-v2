@@ -43,3 +43,8 @@ firmware/pca9685_test/
 model &miscellenious/*
 !model &miscellenious/MAGI.3mf/
 !model &miscellenious/README.md
+!media/*.mp4
+.venv/
+venv/
+ENV/
+.env
