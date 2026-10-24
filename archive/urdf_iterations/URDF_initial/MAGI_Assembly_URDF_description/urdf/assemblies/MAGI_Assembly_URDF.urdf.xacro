@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="MAGI_Assembly_URDF_macro">
+
+  <xacro:macro name="MAGI_Assembly_URDF" params="prefix">
+
+    <!-- Links -->
+    <link name="${prefix}base_link">
+      <inertial>
+        <origin xyz="0.188950 1.012566 0.124814" rpy="0 0 0"/>
+        <mass value="0.461432"/>
+        <inertia ixx="7.929840e-04" ixy="8.295237e-08" ixz="1.419208e-06"
+                 iyy="1.825252e-03" iyz="-2.865923e-08" izz="2.601024e-03"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/base_link.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/base_link_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}HexapodV3Mid">
+      <inertial>
+        <origin xyz="0.056935 -0.338657 0.392833" rpy="0 0 0"/>
+        <mass value="0.430715"/>
+        <inertia ixx="3.691505e-04" ixy="9.189307e-07" ixz="3.260568e-05"
+                 iyy="1.624727e-03" iyz="1.642784e-08" izz="1.982639e-03"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HexapodV3Mid.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HexapodV3Mid_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}HexapodV3Top">
+      <inertial>
+        <origin xyz="0.148577 2.513000 0.237965" rpy="0 0 0"/>
+        <mass value="1.329055"/>
+        <inertia ixx="5.538158e-03" ixy="1.518249e-06" ixz="8.338057e-06"
+                 iyy="6.473322e-03" iyz="-5.310300e-07" izz="1.181787e-02"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HexapodV3Top.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HexapodV3Top_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_7">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_7.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_7_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_2">
+      <inertial>
+        <origin xyz="0.668284 -0.197647 0.146477" rpy="0 0 0"/>
+        <mass value="1.162034"/>
+        <inertia ixx="2.091573e-03" ixy="-7.724772e-04" ixz="-3.754779e-05"
+                 iyy="8.020208e-04" iyz="-8.140391e-05" izz="2.515038e-03"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_4">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_4.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_4_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2">
+      <inertial>
+        <origin xyz="-0.309800 -0.274957 -0.553507" rpy="0 0 0"/>
+        <mass value="0.265679"/>
+        <inertia ixx="1.676891e-04" ixy="-4.194241e-05" ixz="3.288760e-06"
+                 iyy="1.732416e-04" iyz="3.476433e-06" izz="1.224355e-04"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.790240 -0.541641 0.101007" rpy="0.538487 1.570783 -0.261799"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Left_v2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.790240 -0.541641 0.101007" rpy="0.538487 1.570783 -0.261799"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2">
+      <inertial>
+        <origin xyz="0.656485 -0.209995 0.143258" rpy="0 0 0"/>
+        <mass value="0.265916"/>
+        <inertia ixx="1.236173e-04" ixy="6.091416e-06" ixz="-2.158245e-07"
+                 iyy="1.306979e-04" iyz="1.833670e-06" izz="2.156704e-04"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_2">
+      <inertial>
+        <origin xyz="0.407835 0.370113 -0.379153" rpy="0 0 0"/>
+        <mass value="0.265679"/>
+        <inertia ixx="1.676891e-04" ixy="-4.194241e-05" ixz="-3.288760e-06"
+                 iyy="1.732416e-04" iyz="-3.476433e-06" izz="1.224355e-04"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.888275 0.636796 0.275360" rpy="0.538487 1.570783 2.879793"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.888275 0.636796 0.275360" rpy="0.538487 1.570783 2.879793"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_3">
+      <inertial>
+        <origin xyz="0.918919 -0.906703 -0.555651" rpy="0 0 0"/>
+        <mass value="0.265916"/>
+        <inertia ixx="1.696096e-04" ixy="4.237533e-05" ixz="4.544269e-06"
+                 iyy="1.767587e-04" iyz="-4.062247e-06" izz="1.236173e-04"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.668215 -0.864645 0.100833" rpy="-1.154975 1.570793 -0.349066"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_3.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.668215 -0.864645 0.100833" rpy="-1.154975 1.570793 -0.349066"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_3_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_5">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_5.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_5_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_8">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_8.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_8_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_3">
+      <inertial>
+        <origin xyz="0.020183 0.019509 0.000018" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="3.608015e-05" ixy="6.266312e-07" ixz="4.838323e-08"
+                 iyy="4.048873e-05" iyz="-8.607661e-08" izz="6.116593e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_3.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_3_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Femur">
+      <inertial>
+        <origin xyz="-0.471069 -0.056915 0.403484" rpy="0 0 0"/>
+        <mass value="0.175899"/>
+        <inertia ixx="1.183024e-04" ixy="2.456645e-05" ixz="2.454876e-08"
+                 iyy="1.467091e-04" iyz="7.559260e-09" izz="7.700635e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.512382 -0.773114 -0.127693" rpy="0.000000 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.512382 -0.773114 -0.127693" rpy="0.000000 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Femur_2">
+      <inertial>
+        <origin xyz="-0.784904 -0.077019 0.403582" rpy="0 0 0"/>
+        <mass value="0.175899"/>
+        <inertia ixx="1.183024e-04" ixy="2.456645e-05" ixz="2.454876e-08"
+                 iyy="1.467091e-04" iyz="7.559260e-09" izz="7.700635e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.826216 -0.793218 -0.127595" rpy="0.000000 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur_2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.826216 -0.793218 -0.127595" rpy="0.000000 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur_2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Femur_3">
+      <inertial>
+        <origin xyz="0.099264 0.586456 0.404164" rpy="0 0 0"/>
+        <mass value="0.175899"/>
+        <inertia ixx="1.183335e-04" ixy="-2.458437e-05" ixz="-5.727264e-09"
+                 iyy="1.466781e-04" iyz="-2.503962e-08" izz="7.700635e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.500337 0.980318 -0.127013" rpy="0.000000 0.000000 -2.617989"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur_3.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.500337 0.980318 -0.127013" rpy="0.000000 0.000000 -2.617989"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Femur_3_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_6">
+      <inertial>
+        <origin xyz="-0.048599 -0.085491 -0.870965" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="4.231010e-05" ixy="1.083851e-05" ixz="-5.857124e-07"
+                 iyy="5.493598e-05" iyz="2.387821e-07" izz="4.048873e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.031129 -0.095598 -0.890475" rpy="1.570796 0.000000 2.617975"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_6.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.031129 -0.095598 -0.890475" rpy="1.570796 0.000000 2.617975"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_6_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_9">
+      <inertial>
+        <origin xyz="-0.241021 0.252597 -1.115805" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="4.231010e-05" ixy="1.083851e-05" ixz="5.857124e-07"
+                 iyy="5.493598e-05" iyz="-2.387821e-07" izz="4.048873e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.258491 0.262704 -1.135315" rpy="1.570796 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_9.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.258491 0.262704 -1.135315" rpy="1.570796 0.000000 -0.523618"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_9_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_MG996R_servo_2">
+      <inertial>
+        <origin xyz="0.048992 -0.084679 -1.114757" rpy="0 0 0"/>
+        <mass value="0.240073"/>
+        <inertia ixx="4.239361e-05" ixy="-1.088672e-05" ixz="-4.996382e-07"
+                 iyy="5.485247e-05" iyz="-3.878628e-07" izz="4.048873e-05"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.066480 -0.074603 -1.134266" rpy="1.570796 0.000000 -2.617989"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.066480 -0.074603 -1.134266" rpy="1.570796 0.000000 -2.617989"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_MG996R_servo_2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Tibia_Left">
+      <inertial>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0"/>
+        <mass value="0.001000"/>
+        <inertia ixx="1.000000e-06" ixy="0.000000e+00" ixz="0.000000e+00"
+                 iyy="1.000000e-06" iyz="0.000000e+00" izz="1.000000e-06"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Tibia_Left.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Tibia_Left_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}MAGI_Assembly_URDF_HQpod_Tibia_Left_2">
+      <inertial>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0"/>
+        <mass value="0.001000"/>
+        <inertia ixx="1.000000e-06" ixy="0.000000e+00" ixz="0.000000e+00"
+                 iyy="1.000000e-06" iyz="0.000000e+00" izz="1.000000e-06"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Tibia_Left_2.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/MAGI_Assembly_URDF_HQpod_Tibia_Left_2_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="${prefix}HQpod_Tibia_Right">
+      <inertial>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0"/>
+        <mass value="0.001000"/>
+        <inertia ixx="1.000000e-06" ixy="0.000000e+00" ixz="0.000000e+00"
+                 iyy="1.000000e-06" iyz="0.000000e+00" izz="1.000000e-06"/>
+      </inertial>
+      <visual>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HQpod_Tibia_Right.dae" scale="1 1 1"/>
+        </geometry>
+        <material name="Steel"/>
+      </visual>
+      <collision>
+        <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000"/>
+        <geometry>
+          <mesh filename="package://MAGI_Assembly_URDF_description/meshes/MAGI_Assembly_URDF/HQpod_Tibia_Right_collision.stl" scale="0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joints (internal to assembly) -->
+    <joint name="${prefix}Rigid_1" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}HexapodV3Mid"/>
+      <origin xyz="0.113207 1.351156 -0.242000" rpy="-0.000000 0.000000 0.000000"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_2" type="fixed">
+      <parent link="${prefix}HexapodV3Mid"/>
+      <child link="${prefix}HexapodV3Top"/>
+      <origin xyz="-0.074434 -2.851566 0.152148" rpy="0.000000 0.000000 0.000000"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_4" type="fixed">
+      <parent link="${prefix}HexapodV3Top"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo"/>
+      <origin xyz="0.054925 2.437386 0.211602" rpy="1.570796 0.000000 0.785398"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_10" type="fixed">
+      <parent link="${prefix}HexapodV3Top"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_7"/>
+      <origin xyz="0.243915 2.588642 0.211602" rpy="1.570796 0.000000 -2.356194"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_17" type="fixed">
+      <parent link="${prefix}HexapodV3Top"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_2"/>
+      <origin xyz="0.512995 2.378974 0.882978" rpy="-1.154975 1.570793 2.792527"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_29" type="fixed">
+      <parent link="${prefix}HexapodV3Top"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_4"/>
+      <origin xyz="0.054739 2.588547 0.210956" rpy="1.570796 0.000000 -0.785398"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_5" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2"/>
+      <origin xyz="0.389152 0.569011 0.023325" rpy="-1.570796 -0.785398 0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-0.593412" upper="1.570796" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_11" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_7"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2"/>
+      <origin xyz="-0.271684 0.672022 0.032938" rpy="-2.725771 0.000000 -1.570793"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_12" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_7"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_2"/>
+      <origin xyz="0.525758 0.394657 0.025361" rpy="1.570796 0.785398 -3.141593"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-0.383972" upper="1.570796" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_24" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_4"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_3"/>
+      <origin xyz="-1.315235 0.571189 0.010147" rpy="-1.570796 0.785398 0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.570796" upper="0.593412" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_6" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_5"/>
+      <origin xyz="-0.300345 -0.298625 -0.573417" rpy="-2.077761 -1.570782 2.848271"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_13" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Left_v2_2"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_8"/>
+      <origin xyz="0.398051 0.394361 -0.399161" rpy="-2.077761 -1.570782 -0.293322"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_25" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Coxal_Right_v2_3"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_3"/>
+      <origin xyz="0.928230 -0.882970 -0.575629" rpy="-0.545389 -1.570792 2.922096"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_7" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_5"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Femur"/>
+      <origin xyz="-0.061224 -0.389313 -0.445687" rpy="1.570796 1.570777 -3.141593"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.396263" upper="0.959931" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_14" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_8"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Femur_2"/>
+      <origin xyz="0.072694 -0.389411 0.810137" rpy="-1.570796 -1.570777 -0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.396263" upper="0.959931" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_26" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_3"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Femur_3"/>
+      <origin xyz="-0.590615 -0.389993 -0.124604" rpy="1.570796 -1.570791 3.141593"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-0.959931" upper="1.396263" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_8" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Femur"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_6"/>
+      <origin xyz="-0.456212 0.048197 1.279788" rpy="0.000000 0.000000 0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.570796" upper="1.570796" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_15" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Femur_2"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_9"/>
+      <origin xyz="-0.509995 -0.349198 1.524726" rpy="0.000000 0.000000 0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.570796" upper="1.570796" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Revolute_27" type="revolute">
+      <parent link="${prefix}MAGI_Assembly_URDF_HQpod_Femur_3"/>
+      <child link="${prefix}MAGI_Assembly_URDF_MG996R_servo_2"/>
+      <origin xyz="0.016368 0.651577 1.524259" rpy="0.000000 0.000000 0.000000"/>
+      <axis xyz="0.000000 0.000000 1.000000"/>
+      <limit lower="-1.570796" upper="1.570796" effort="100.0" velocity="1.00"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_9" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_6"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Tibia_Left"/>
+      <origin xyz="0.053166 -0.665761 -0.837464" rpy="3.141593 0.000000 1.047179"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_16" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_9"/>
+      <child link="${prefix}MAGI_Assembly_URDF_HQpod_Tibia_Left_2"/>
+      <origin xyz="-0.342786 0.832867 -1.082304" rpy="-3.141593 0.000000 -2.094414"/>
+    </joint>
+
+    <joint name="${prefix}Rigid_30" type="fixed">
+      <parent link="${prefix}MAGI_Assembly_URDF_MG996R_servo_2"/>
+      <child link="${prefix}HQpod_Tibia_Right"/>
+      <origin xyz="-0.273455 0.731255 -0.968443" rpy="-3.141589 -0.000003 2.094400"/>
+    </joint>
+
+    <!-- ROS 2 control: generated generic system -->
+    <ros2_control name="${prefix}MAGI_Assembly_URDF_system" type="system">
+      <hardware>
+        <plugin>mock_components/GenericSystem</plugin>
+        <param name="cmd_topic">sim/MAGI_Assembly_URDF_system/cmd</param>
+        <param name="state_topic">sim/MAGI_Assembly_URDF_system/state</param>
+      </hardware>
+
+      <joint name="${prefix}Revolute_12">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_14">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_15">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_24">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_26">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_27">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_5">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_7">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+      <joint name="${prefix}Revolute_8">
+        <command_interface name="position"/>
+        <command_interface name="velocity"/>
+        <state_interface name="position">
+          <param name="initial_value">0.0</param>
+        </state_interface>
+        <state_interface name="velocity"/>
+        <state_interface name="effort"/>
+      </joint>
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>

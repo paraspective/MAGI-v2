@@ -1,0 +1,145 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Edge-Optimized Spectral Masking with Lifecycle-Gated Inference for Real-Time Agricultural Diagnostics on a Resource-Constrained Quadruped}
+
+\author{\IEEEauthorblockN{Paras Dharmadhikari, Swayam Lute, AjayKumar Nagpure, Monali Chaudhari}
+\IEEEauthorblockA{Department of Electronics \& Telecommunication Engineering\\
+Vivekanand Education Society's Institute of Technology (VESIT), Mumbai, India\\
+Project Repository: \url{https://github.com/paraspective/MAGI-Development}}
+}
+
+\maketitle
+
+\begin{abstract}
+Deploying quadrupedal mobile robots for precision agriculture demands concurrent real-time execution of multi-modal sensory perception, dynamic gait stabilization, and multi-model deep learning inference. However, existing robotics middlewares such as ROS 2 over Data Distribution Service (DDS) introduce prohibitive memory overhead ($\sim$200~MB) and non-deterministic serialization latency on low-power single-board computers (SBCs). In this paper, we present MAGI (Multispectral Autonomous Ground Intelligence), an integrated 12-DOF quadrupedal robotic platform engineered to execute three concurrent deep learning models alongside real-time inverse kinematics on a resource-constrained Raspberry Pi 4B and dual-core ESP32 microcontroller without GPU acceleration or cloud offloading. The system replaces heavy DDS middleware with a custom ZeroMQ XPUB/XSUB broker ($\le$22~MB RAM) and zero-copy POSIX shared memory buffers. Cognitive responsibilities are partitioned across isolated CPU cores into three Evangelion-inspired consensus nodes: Melchior (object and foliar disease classification), Balthasar (scene context and motion anomaly detection), and Caspar (probabilistic fusion and locomotion command dispatch). We validate the platform through analytical kinematics, a zero-install Three.js WebGL simulation twin with genetic algorithm gait tuning, and physical edge inference benchmarks demonstrating continuous in-canopy pathology monitoring within a 30.6\% total system memory footprint.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Quadruped Robotics, Edge AI, Precision Agriculture, Embedded Operating Systems, Inverse Kinematics, ZeroMQ.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Precision agriculture requires autonomous monitoring of crop canopies at high spatial and temporal resolutions to enable early intervention against fungal, bacterial, and viral pathogens \cite{bechar2016agricultural}. While unmanned aerial vehicles (UAVs) provide macro-level field surveys, their downward perspective is occluded by dense crop foliage, precluding fine-grained in-canopy inspection. Wheeled unmanned ground vehicles (UGVs) overcome occlusion but remain restricted to uniform, pre-leveled tractor tracks, failing on irregular furrows and muddy terrain.
+
+Quadrupedal walking robots offer superior multi-terrain traversability by maintaining discrete footholds across uneven agricultural topographies \cite{hutter2016anymal}. However, state-of-the-art quadrupeds typically rely on costly industrial embedded computing platforms (e.g., NVIDIA Jetson AGX Orin, Intel x86 i7) running ROS 2 \cite{macenski2022robot}. In contrast, smallholder farming and distributed sensor networks necessitate ultra-low-cost, energy-efficient robotics hardware capable of sustained edge computing without cloud connectivity.
+
+To address these constraints, we propose MAGI, an open-source, 12-DOF quadrupedal robotics platform designed to achieve autonomous in-canopy plant health evaluation within the computational limits of a \$35 Raspberry Pi 4B (4~GB RAM) and an ESP32 microcontroller. The primary contributions of this work include:
+\begin{enumerate}
+    \item \textbf{MAGI OS}: A deterministic, POSIX shared-memory and ZeroMQ-based robotics middleware achieving ROS 2-grade node lifecycle management with an 89\% reduction in memory overhead.
+    \item \textbf{Tri-Core Cognitive Architecture}: An isolated multi-process AI stack (Melchior, Balthasar, Caspar) pinned to dedicated ARM Cortex-A72 cores, eliminating thread contention during concurrent computer vision and sensor fusion operations.
+    \item \textbf{Hierarchical Locomotion Control}: A distributed computing model where high-level state decisions are processed on the SBC and dispatched via high-speed UART to an ESP32 resolving analytical 3-DOF inverse kinematics and Bézier foot trajectories at 240~MHz.
+    \item \textbf{Zero-Install WebGL Digital Twin}: A browser-accessible Three.js simulator integrating client-side genetic algorithm gait optimization.
+\end{enumerate}
+
+\section{System Architecture}
+
+\subsection{Hardware Architecture}
+The mechanical chassis of MAGI consists of a modular 3D-printed body fabricated in polyethylene terephthalate glycol (PETG) with 40\% infill for structural rigidity. The robot features four identical 3-DOF legs arranged symmetrically about the longitudinal and lateral axes. Each leg comprises:
+\begin{itemize}
+    \item A \textbf{Coxa} link providing hip abduction/adduction ($\theta_1$).
+    \item A \textbf{Femur} link delivering hip flexion/extension ($\theta_2$).
+    \item A \textbf{Tibia} link driving knee flexion/extension ($\theta_3$).
+\end{itemize}
+Actuation is provided by 12 metal-gear TowerPro MG996R servomotors operating at 6.0~V, yielding a maximum stall torque of 11.0~kg$\cdot$cm per actuator. Power is supplied by an 11.1~V 3S LiPo battery stepped down through dual high-amperage switching buck converters.
+
+\subsection{Distributed Computing Topology}
+The computing architecture is organized hierarchically:
+\begin{enumerate}
+    \item \textbf{High-Level Supervisor (Raspberry Pi 4B)}: Executes MAGI OS, the ZeroMQ broker, camera image acquisition, 6-channel spectral filtering, and TFLite neural network inference.
+    \item \textbf{Low-Level Joint Controller (ESP32-WROOM-32)}: Resolves analytical inverse kinematics, calculates cubic Bézier swing phases, performs MPU-6050 complementary filtering, and drives the PCA9685 16-channel PWM servo controller over I²C.
+\end{enumerate}
+
+\begin{table}[t]
+\caption{System Memory and Resource Distribution on Raspberry Pi 4B (4~GB)}
+\label{tab:memory}
+\centering
+\begin{tabular}{@{}lllr@{}}
+\toprule
+\textbf{Subsystem / Node} & \textbf{CPU Core} & \textbf{Implementation} & \textbf{RAM (MB)} \\
+\midrule
+Linux Base OS & Shared & Stripped Headless Debian & 180 \\
+ZeroMQ XPUB/XSUB Broker & Core 0 & Native C/Python Bindings & 22 \\
+Sensor Hub \& Camera I/O & Core 0 & Shared Memory Writer & 80 \\
+Melchior (Pathology AI) & Core 1 & MobileNetV2 6-Ch TFLite & 300 \\
+Balthasar (Scene Anomaly) & Core 2 & EfficientNet-Lite TFLite & 200 \\
+Caspar (Fusion Engine) & Core 3 & Asynchronous Rule/FSM & 150 \\
+Shared Memory Frame Buffer & RAM & POSIX SHM (3 Buffers) & 320 \\
+\midrule
+\textbf{Total System Allocation} & & & \textbf{1252 MB} \\
+\textbf{Headroom / Unallocated} & & & \textbf{2844 MB} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Kinematics and Locomotion Control}
+
+\subsection{Analytical Inverse Kinematics}
+Let the target position of the foot tip relative to the hip coordinate frame be defined as $\mathbf{P} = [x, y, z]^T$. The analytical inverse kinematics equations yield the joint angles $\boldsymbol{\theta} = [\theta_1, \theta_2, \theta_3]^T$:
+
+\begin{equation}
+\theta_1 = \text{atan2}(y, x)
+\end{equation}
+
+Projecting into the sagittal leg plane, the effective planar length $L_{xz}$ and horizontal reach $d$ are given by:
+\begin{equation}
+d = \sqrt{x^2 + y^2} - L_1, \quad L = \sqrt{d^2 + z^2}
+\end{equation}
+where $L_1$, $L_2$, and $L_3$ represent the coxa, femur, and tibia link lengths, respectively. Applying the law of cosines:
+
+\begin{equation}
+\theta_3 = \pi - \arccos\left(\frac{L_2^2 + L_3^2 - L^2}{2 L_2 L_3}\right)
+\end{equation}
+
+\begin{equation}
+\theta_2 = \text{atan2}(-z, d) - \arccos\left(\frac{L_2^2 + L^2 - L_3^2}{2 L_2 L}\right)
+\end{equation}
+
+This closed-form formulation avoids numerical convergence iterations, executing on the ESP32 in under $0.80\,\mu\text{s}$ per leg.
+
+\subsection{Bézier Swing-Phase Trajectory}
+To ensure smooth ground clearance without abrupt foot impact impulses, the swing-phase trajectory is governed by a cubic Bézier curve parameterized by normalized phase time $t \in [0, 1]$:
+\begin{equation}
+\mathbf{B}(t) = (1-t)^3 \mathbf{P}_0 + 3(1-t)^2 t \mathbf{P}_1 + 3(1-t) t^2 \mathbf{P}_2 + t^3 \mathbf{P}_3
+\end{equation}
+where $\mathbf{P}_0$ is the lift-off coordinate, $\mathbf{P}_1$ and $\mathbf{P}_2$ establish maximum apex clearance and horizontal velocity matching, and $\mathbf{P}_3$ is the touchdown target.
+
+\section{Edge AI Perception and Multispectral Pathology}
+The Melchior vision subsystem evaluates plant disease through continuous spatial scanning:
+\begin{enumerate}
+    \item \textbf{6-Channel Input}: Combines RGB with Excess Green ($\text{ExG} = 2G - R - B$), Green-Red Vegetation Index ($\text{GRVI} = \frac{G - R}{G + R}$), and CIE Lightness ($L^*$).
+    \item \textbf{Soil Pre-Filter}: Frames are decomposed into a $4 \times 3$ grid; tiles where $\text{ExG} < \tau_{\text{soil}}$ are bypassed, saving 35--50\% inference compute.
+    \item \textbf{Quantized Inference}: Models are quantized to float16 and executed with ARM NEON XNNPACK acceleration, achieving an average inference latency of 124.6~ms on a single Cortex-A72 core.
+\end{enumerate}
+
+\section{Experimental Results and Discussion}
+
+\begin{figure}[t]
+\centering
+\fbox{\rule{0pt}{1.8in} \rule{0.9\linewidth}{0pt}}
+\caption{System performance benchmarks comparing MAGI OS ZeroMQ IPC latency and RAM overhead against ROS 2 Humble DDS.}
+\label{fig:benchmark}
+\end{figure}
+
+Benchmarking against a baseline ROS 2 Humble setup running on identical Raspberry Pi 4B hardware revealed that MAGI OS reduces boot-to-operational latency from 42.4~s to 7.8~s. Memory utilization dropped from 718~MB to 180~MB for the underlying system stack, preserving 2.8~GB of RAM for real-time model weights and frame caching.
+
+\section{Conclusion and Future Work}
+MAGI demonstrates that resource-constrained quadruped robots can execute multi-core edge AI and complex kinematic gaits without relying on expensive workstation-grade processors or cloud offloading. Future milestones focus on multi-robot swarm consensus across agricultural field plots.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

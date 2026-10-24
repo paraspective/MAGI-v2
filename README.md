@@ -128,62 +128,68 @@ MAGI is composed of three tightly coupled subsystems that communicate through we
 
 ---
 
-## Repository Layout
+## 🏛️ Project Classification Matrix (Past · Present · Future)
+
+To ensure high-standard engineering rigor and maintainability, the MAGI codebase is systematically categorized into three lifecycles:
+
+| Lifecycle | Scope | Subsystems & Paths | Description & Status |
+|---|---|---|---|
+| 🏛️ **PAST** | Historical Evolution & References | [`archive/`](archive/) | Deprecated CAD bracket iterations, early URDF exports, monolithic prototype scripts, and attributed open-source quadruped references (Regis, SpdrBot, CubeSat). |
+| ⚡ **PRESENT** | Active Production Architecture | [`hardware/`](hardware/), [`firmware/`](firmware/), [`OS/`](OS/), [`simulation/`](simulation/), [`perception/`](perception/), [`tools/`](tools/), [`media/`](media/) | Current deployment code: 12-DOF physical robot CAD & ROS 2 URDF, ESP32 FreeRTOS firmware, custom 4-core ZeroMQ Pi OS, WebGL 3D simulator, and MLOps plant pathology pipeline. |
+| 🚀 **FUTURE** | What Is To Be Done & Research | [`ROADMAP.md`](ROADMAP.md), [`TODO.md`](TODO.md), [`paper/`](paper/), [`docs/research/`](docs/research/) | Active engineering backlog, Phase 1–8 milestone deliverables, field agricultural trials, and IEEE academic publication manuscript. |
+
+---
+
+## 📂 Repository Layout
 
 ```
-MAGI/
+MAGI-Development/
 │
-├── OS/                           Embedded operating system (Raspberry Pi 4B)
-│   ├── setup/                    4-stage deployment scripts
-│   ├── src/
-│   │   ├── core/                 ROS2-grade middleware (native implementation)
-│   │   │   ├── message_bus.py    ZeroMQ XPUB/XSUB broker
-│   │   │   ├── messages.py       Typed message dataclasses (msgpack serialized)
-│   │   │   ├── lifecycle.py      Managed node lifecycle state machine
-│   │   │   ├── qos.py            Per-topic Quality of Service profiles
-│   │   │   ├── param_server.py   Runtime parameter store (ZMQ REQ/REP)
-│   │   │   ├── diagnostics.py    Node health monitor
-│   │   │   ├── transforms.py     TF2 coordinate frame registry
-│   │   │   └── recorder.py       SQLite message recorder (rosbag equivalent)
-│   │   ├── sensors/              Hardware I/O layer
-│   │   ├── magi1/melchior.py     Object/disease detection (Core 1)
-│   │   ├── magi2/balthasar.py    Scene analysis + anomaly (Core 2)
-│   │   ├── magi3/caspar.py       Fusion + decision engine (Core 3)
-│   │   └── watchdog.py           Process supervisor + auto-restart
-│   ├── services/                 Systemd unit files
-│   └── docker/                   Hardware-mocked testing environment
+├── ⚡ PRESENT (Active Production Subsystems)
+│   ├── hardware/                     Mechanical CAD, Verified STLs, BOM & ROS 2 URDF
+│   │   ├── cad/                      Master 3MF project (MAGI.3mf) & SolidWorks servo models
+│   │   ├── stl/                      Production 3D print meshes (chassis, legs, canopy)
+│   │   ├── bom/                      Itemized Bill of Materials (bom-export.csv)
+│   │   ├── docs/                     Forward & Inverse Kinematics analytical math (PDF)
+│   │   └── urdf/                     MAGI_Assembly_URDF_description (Full ROS 2 package)
+│   │
+│   ├── firmware/                     ESP32 12-DOF Real-Time Joint Controller
+│   │   └── magi_esp32/               PlatformIO C++ project (IK solver, Bézier gait, PCA9685, IMU)
+│   │
+│   ├── OS/                           Embedded Operating System (Raspberry Pi 4B)
+│   │   ├── setup/                    4-stage OS deployment scripts (01-04)
+│   │   ├── services/                 Systemd auto-restart service descriptors
+│   │   ├── docker/                   Mocked hardware test harness & dummy TFLite models
+│   │   └── src/                      ZeroMQ broker, Melchior (MAGI-1), Balthasar (MAGI-2), Caspar (MAGI-3)
+│   │
+│   ├── simulation/                   Digital Twin & Training Environment
+│   │   ├── web/                      Zero-install Three.js WebGL visualizer & Genetic Algorithm trainer
+│   │   ├── python/                   PyBullet RL gait trainer & kinematics validation scripts
+│   │   └── models/                   SpiderQ URDF and GLB visual meshes
+│   │
+│   ├── perception/                   Perception, Camera & Plant Pathology Subsystems
+│   │   ├── camera/                   PiCamera streaming server (Zero-Copy shared memory)
+│   │   ├── mlops/                    End-to-end MLOps pipeline for canopy health (FastAPI, Docker)
+│   │   └── analysis/                 Spectral heatmap algorithms & Streamlit CLAHE visualizer
+│   │
+│   ├── tools/                        Developer Utilities & Telemetry
+│   │   └── dashboards/               Real-time ZeroMQ system monitor & telemetry GUI
+│   │
+│   └── media/                        Operational Media & Video Demonstrations
+│       └── NERV_video_MAGI.mp4       Quadruped boot sequence & gait coordination video
 │
-├── firmware/                     ESP32 joint controller
-│   ├── magi_esp32/               PlatformIO project
-│   │   └── src/
-│   │       ├── main.cpp          Entry point
-│   │       ├── kinematics.h/cpp  3-DOF IK solver
-│   │       ├── gait_engine.h/cpp Crawl / Trot / Bound gait patterns
-│   │       ├── servo_controller  PCA9685 I²C servo driver
-│   │       ├── imu_driver        MPU-6050 complementary filter
-│   │       └── uart_protocol     Pi ↔ ESP32 command parser
-│   └── tests/                    7 standalone hardware test sketches
+├── 🏛️ PAST (Historical Evolution & Reference Baselines)
+│   └── archive/
+│       ├── cad_prototypes/           Deprecated servo plates & mechanical tolerance test prints
+│       ├── urdf_iterations/          Evolution of URDF kinematic tree exports (v1, initial)
+│       ├── legacy_scripts/           Monolithic prototype scripts prior to modular OS refactor
+│       └── references/               Attributed open-source baseline models (Regis, SpdrBot, CubeSat)
 │
-├── simulation/                   Browser-based 3D simulator + training
-│   ├── index.html                Main UI (5 tabbed interface)
-│   ├── robot.js                  Three.js WebGL viewport + IK solver
-│   ├── gait.js                   Cubic Bézier foot trajectory generator
-│   ├── rl_train.js               Genetic algorithm + NNPolicy trainer
-│   ├── magi_fusion.js            Caspar decision engine (browser mirror)
-│   ├── dashboard.js              60fps coordination loop
-│   ├── SpiderQ.urdf / .glb       Robot geometry and 3D meshes
-│   ├── MAGI_gait_learning.py     Standalone PyBullet RL trainer
-│   └── ik.py / fk.py             Reference Python kinematics solvers
-│
-├── model & miscellenious/        3D print files (chassis, legs, joints)
-│   └── MAGI.3mf                  Full assembly CAD project
-│
-├── HeatMAP/                      ML preprocessing evaluation dashboard
-│   ├── visauls.py                Streamlit app (CLAHE, confusion matrix)
-│   └── Heatmap_algo.ipynb        Baseline spectral heatmap algorithm
-│
-└── Research paper/               IEEE-format research paper (LaTeX)
-    └── main.tex                  Full paper source
+└── 🚀 FUTURE (What Is To Be Done & Research)
+    ├── ROADMAP.md                    Strategic milestone roadmap (Phases 1 through 8)
+    ├── TODO.md                       Active technical backlog categorized by subsystem
+    ├── paper/                        IEEE conference research paper source (LaTeX + BibTeX)
+    └── docs/research/                Architectural context & theoretical whitepapers (PDFs)
 ```
 
 ---
@@ -786,7 +792,7 @@ pio device monitor --baud 115200
 
 ## Research Paper
 
-The full technical paper is available in `Research paper/` in IEEE conference format:
+The full technical paper is available in [`paper/`](paper/) in IEEE conference format:
 
 > **"Edge-Optimized Spectral Masking with Lifecycle-Gated Inference for Real-Time Agricultural Diagnostics on a Resource-Constrained Quadruped"**
 >
@@ -795,8 +801,8 @@ The full technical paper is available in `Research paper/` in IEEE conference fo
 
 Build the PDF:
 ```bash
-cd "Research paper"
-make          # or: pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
+cd paper/
+pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
 ```
 
 ---

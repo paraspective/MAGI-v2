@@ -1,50 +1,95 @@
-# Compiled Python files
+# ==============================================================================
+# MAGI Development - .gitignore
+# ==============================================================================
+
+# --- Large VM Disks, ISOs & VirtualBox Environments (>100MB / Multi-GB) ---
+MAGI/
+MAGI_code/
+Linux/
+VirtualBox VMs/
+*.iso
+*.vdi
+*.vmdk
+*.box
+*.lck
+*.nvram
+*.vbox
+*.vbox-prev
+
+# --- Large Compressed Archives (>50MB / External Backups) ---
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# --- Files Exceeding GitHub 100MB Limit ---
+archive/references/Regis-main/Regis-main/CAD & .stl files/Bottom Plate.stl
+Regis-main/Regis-main/CAD & .stl files/Bottom Plate.stl
+**/Bottom Plate.stl
+archive/references/**/Robotics Vision and Control Peter Corke.pdf
+archive/references/**/*.pdf
+
+# --- Python & Jupyter Cache ---
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 .ipynb_checkpoints/
 
-# PlatformIO & IDEs
+# --- PlatformIO & Embedded Toolchains ---
 .pio/
 .vscode/
+.vs/
 *.o
 *.elf
 *.hex
 *.bin
 *.su
 
-# OS files
+# --- Operating System Files ---
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Large media files
-*.mp4
-*.avi
-*.mov
-
-# Archive files
-*.zip
-*.rar
-*.tar.gz
-*.7z
-
-# Mathworks Simscape simulation project (External)
-mathworks-Simscape-Robot-4Legs-26.1.2.7/
-mathworks-Simscape-Robot-4Legs-26.1.2.7.zip
-
-# HeatMAP temporary/converted files
-HeatMAP/vertopal.com_Heatmap_algo.doc
-
-# Firmware test project
-firmware/pca9685_test/
-
-# Exclude all files in 'model &miscellenious' EXCEPT for 'MAGI.3mf/' and 'README.md'
-model &miscellenious/*
-!model &miscellenious/MAGI.3mf/
-!model &miscellenious/README.md
-!media/*.mp4
-.venv/
-venv/
-ENV/
+# --- Environment & Secrets ---
 .env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- External Mathworks Simulation Project ---
+mathworks-Simscape-Robot-4Legs-26.1.2.7/
+
+# --- Temporary / Converted Files ---
+HeatMAP/vertopal.com_Heatmap_algo.doc
+*.tmp
+*.bak
+*.swp
+

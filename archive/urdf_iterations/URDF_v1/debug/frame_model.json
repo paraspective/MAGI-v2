@@ -1,0 +1,4852 @@
+{
+  "cache_version": 1,
+  "config": {
+    "collision_auto_method": "primitive",
+    "collision_format": "stl",
+    "export_collision_mesh": true,
+    "export_visual_mesh": true,
+    "frame_convention": "ros",
+    "frame_overrides_filename": "frame_overrides.csv",
+    "include_debug": true,
+    "include_docs": true,
+    "include_launch": true,
+    "include_readme": true,
+    "include_robot_data_yaml": true,
+    "include_ros2_control": true,
+    "include_rviz": true,
+    "include_screenshot": true,
+    "mesh_refinement": "medium",
+    "output_dir": "D:/Paras/MAGI/URDF_NEW_2",
+    "override_explicit_collision": false,
+    "package_name": "MAGI_Assemblyy_description",
+    "robot_prefix": "",
+    "ros2_control_command_interfaces": [
+      "position",
+      "velocity"
+    ],
+    "ros2_control_hardware_plugin": "mock_components/GenericSystem",
+    "ros2_control_update_rate": 100,
+    "use_xacro": false,
+    "verbosity": "verbose",
+    "visual_format": "dae",
+    "zip_name": "",
+    "zip_output": false
+  },
+  "model": {
+    "assemblies": {
+      "MAGI_Assemblyy": {
+        "children_assemblies": [],
+        "depth": 0,
+        "global_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "global_rotation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "joints": [
+          "Rigid_1",
+          "Rigid_2",
+          "Rigid_4",
+          "Rigid_10",
+          "Rigid_17",
+          "Rigid_29",
+          "Revolute_5",
+          "Revolute_12",
+          "Revolute_18",
+          "Revolute_24",
+          "Rigid_6",
+          "Rigid_13",
+          "Rigid_19",
+          "Rigid_25",
+          "Revolute_7",
+          "Revolute_14",
+          "Revolute_20",
+          "Revolute_26",
+          "Revolute_8",
+          "Revolute_15",
+          "Revolute_21",
+          "Revolute_27",
+          "Rigid_32",
+          "Rigid_31",
+          "Rigid_34",
+          "Rigid_33"
+        ],
+        "links": [
+          "base_link",
+          "HexapodV3Mid",
+          "HexapodV3Top",
+          "MAGI_Assemblyy_MG996R_servo",
+          "MAGI_Assemblyy_HQpod_Coxal_Left_v2",
+          "MAGI_Assemblyy_MG996R_servo_6",
+          "MAGI_Assemblyy_HQpod_Femur",
+          "MAGI_Assemblyy_MG996R_servo_7",
+          "MAGI_Assemblyy_MG996R_servo_8",
+          "MAGI_Assemblyy_HQpod_Coxal_Left_v2_2",
+          "MAGI_Assemblyy_MG996R_servo_9",
+          "MAGI_Assemblyy_HQpod_Femur_2",
+          "MAGI_Assemblyy_MG996R_servo_10",
+          "MAGI_Assemblyy_MG996R_servo_11",
+          "MAGI_Assemblyy_HQpod_Coxal_Right_v2",
+          "MAGI_Assemblyy_MG996R_servo_12",
+          "MAGI_Assemblyy_HQpod_Femur_3",
+          "MAGI_Assemblyy_MG996R_servo_2",
+          "MAGI_Assemblyy_MG996R_servo_3",
+          "MAGI_Assemblyy_HQpod_Femur_4",
+          "MAGI_Assemblyy_MG996R_servo_4",
+          "MAGI_Assemblyy_HQpod_Coxal_Right_v2_2",
+          "MAGI_Assemblyy_MG996R_servo_5",
+          "MAGI_Assemblyy_HQpod_Tibia_Left_New",
+          "MAGI_Assemblyy_HQpod_Tibia_Left_New_2",
+          "MAGI_Assemblyy_HQpod_Tibia_Right_New",
+          "MAGI_Assemblyy_HQpod_Tibia_Right_New_2"
+        ],
+        "name": "MAGI_Assemblyy",
+        "parent_assembly": null
+      }
+    },
+    "closing_joints": {},
+    "errors": [],
+    "joints": {
+      "Revolute_12": {
+        "axis": [
+          -0.9999999999107132,
+          6.853128860751651e-06,
+          1.1472064291322472e-05
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Coxal_Left_v2_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -0.3839724354387525,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_12",
+        "origin_global": [
+          -0.10701218884490515,
+          0.7343977899578311,
+          0.5164070771617733
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          0.014888628310491658,
+          -1.157282271840435e-05,
+          -1.5707896452225816
+        ],
+        "origin_xyz": [
+          0.5257579266252642,
+          0.39465707911606396,
+          0.025360780796679243
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_8"
+      },
+      "Revolute_14": {
+        "axis": [
+          1.3103692867648242e-15,
+          -1.7898144988662293e-16,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Femur_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.3962634015954636,
+          "upper": 0.9599310885968813,
+          "velocity": 1.0
+        },
+        "name": "Revolute_14",
+        "origin_global": [
+          0.6011329189219068,
+          1.972444305268452,
+          0.18993974198693475
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.5707963267948917,
+          -1.0471975511965987,
+          3.141592653589791
+        ],
+        "origin_xyz": [
+          0.07269434607989422,
+          -0.38941119308379984,
+          0.8101370072398116
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_9"
+      },
+      "Revolute_15": {
+        "axis": [
+          2.009942268231612e-15,
+          1.0,
+          1.735623024966783e-15
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_10",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_15",
+        "origin_global": [
+          1.2971557752577814,
+          0.5231620758887571,
+          -0.15928354522724958
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.570796326794895,
+          -2.2124974920732787e-15,
+          -6.106226635438358e-16
+        ],
+        "origin_xyz": [
+          -0.26705929348641233,
+          -0.5574173835184764,
+          1.524725842761356
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Femur_2"
+      },
+      "Revolute_18": {
+        "axis": [
+          -0.9999999999933125,
+          -3.3455595062042663e-06,
+          1.4772984183937155e-06
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Coxal_Right_v2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 0.3839724354387525,
+          "velocity": 1.0
+        },
+        "name": "Revolute_18",
+        "origin_global": [
+          1.1213247951011223,
+          0.1086098068613296,
+          0.5176455676524794
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          3.121081728881714,
+          1.5456033918699869e-06,
+          -1.570793012237732
+        ],
+        "origin_xyz": [
+          -1.178517069664971,
+          0.39654160576774933,
+          0.007342550415737378
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_11"
+      },
+      "Revolute_20": {
+        "axis": [
+          -6.758187894940002e-16,
+          -2.677074523093294e-15,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Femur_3",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -0.9599310885968813,
+          "upper": 1.3962634015954636,
+          "velocity": 1.0
+        },
+        "name": "Revolute_20",
+        "origin_global": [
+          0.33821374587692726,
+          0.3117829964371162,
+          -0.4550406839368194
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.5707963267948932,
+          1.047197551196588,
+          -3.1415926535897913
+        ],
+        "origin_xyz": [
+          -0.5717389700291118,
+          -0.3899579613538822,
+          -0.43869744693666846
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_12"
+      },
+      "Revolute_21": {
+        "axis": [
+          -1.7563838025039984e-15,
+          1.0,
+          2.4591685211485507e-15
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_21",
+        "origin_global": [
+          1.1963437960473307,
+          1.2631564544730367,
+          0.009811750306999864
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.5707963267948941,
+          1.609340576926542e-15,
+          3.3306690738754874e-15
+        ],
+        "origin_xyz": [
+          -0.2667891301120986,
+          -0.38273742852073867,
+          1.2805944112584764
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Femur_3"
+      },
+      "Revolute_24": {
+        "axis": [
+          -0.9999999999933125,
+          -3.3455596051473872e-06,
+          1.4772984146401996e-06
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Coxal_Right_v2_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 0.5934119456780721,
+          "velocity": 1.0
+        },
+        "name": "Revolute_24",
+        "origin_global": [
+          -0.8436750776109673,
+          2.0109730303625257,
+          0.6922930679779525
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          3.1210817288817143,
+          1.5456033901757533e-06,
+          -1.570793012237637
+        ],
+        "origin_xyz": [
+          -1.315234729371521,
+          0.5711891060967105,
+          0.010147407409389813
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_5"
+      },
+      "Revolute_26": {
+        "axis": [
+          -8.905342300846745e-16,
+          -2.8175835247573816e-15,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Femur_4",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -0.9599310885968813,
+          "upper": 1.3962634015954636,
+          "velocity": 1.0
+        },
+        "name": "Revolute_26",
+        "origin_global": [
+          0.26471251820100283,
+          1.4956495235653349,
+          -0.473950933228642
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.5707963267948901,
+          1.047197551196596,
+          -3.141592653589791
+        ],
+        "origin_xyz": [
+          -0.5906153712956991,
+          -0.38999286026651836,
+          -0.12460413737632803
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_4"
+      },
+      "Revolute_27": {
+        "axis": [
+          -2.4081025988244716e-15,
+          1.0,
+          3.031497460421717e-15
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_3",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_27",
+        "origin_global": [
+          -0.7789594093226446,
+          0.3846197450479414,
+          0.17762328044604894
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.5707963267948937,
+          2.2055482220157676e-15,
+          4.16333634234435e-15
+        ],
+        "origin_xyz": [
+          -0.3399668937507285,
+          -0.5560966274170247,
+          1.5242592525905856
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Femur_4"
+      },
+      "Revolute_5": {
+        "axis": [
+          -0.9999999999107132,
+          6.8531288612957586e-06,
+          1.1472064291739888e-05
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Coxal_Left_v2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -0.5934119456780721,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_5",
+        "origin_global": [
+          0.3853619151243346,
+          1.1956547874446224,
+          0.6907609142423385
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          0.014888628310492038,
+          -1.157282271799322e-05,
+          -1.570789645222582
+        ],
+        "origin_xyz": [
+          0.38915176424533987,
+          0.569010916197478,
+          0.02332475169209158
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo"
+      },
+      "Revolute_7": {
+        "axis": [
+          -5.901193840225974e-17,
+          1.1564710235452394e-16,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Femur",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.3962634015954636,
+          "upper": 0.9599310885968813,
+          "velocity": 1.0
+        },
+        "name": "Revolute_7",
+        "origin_global": [
+          0.6759805418827938,
+          0.9280977207975195,
+          0.056127751000624726
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          -1.5707963267948906,
+          1.0471975511966072,
+          2.8331558019761754e-16
+        ],
+        "origin_xyz": [
+          -0.06122433172140585,
+          -0.389313111400006,
+          -0.44568748958628773
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_6"
+      },
+      "Revolute_8": {
+        "axis": [
+          -5.543881461756212e-16,
+          1.0,
+          3.593156113900093e-15
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_7",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "revolute",
+        "limits": {
+          "effort": 100.0,
+          "lower": -1.5707963267948966,
+          "upper": 1.5707963267948966,
+          "velocity": 1.0
+        },
+        "name": "Revolute_8",
+        "origin_global": [
+          -0.5427503197598164,
+          1.528663993435365,
+          0.007920137166055968
+        ],
+        "origin_method": "joint_minus_parent",
+        "origin_rpy": [
+          1.570796326794893,
+          9.111753642180795e-16,
+          3.141592653589793
+        ],
+        "origin_xyz": [
+          -0.41918621270358425,
+          -0.18637376022777646,
+          1.2797876681542377
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Femur"
+      },
+      "Rigid_1": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "HexapodV3Mid",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_1",
+        "origin_global": [
+          0.21023259001857458,
+          2.4050514416292432,
+          -0.09350000381712689
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -1.7983113759420351e-12,
+          -0.0,
+          0.0
+        ],
+        "origin_xyz": [
+          0.11320678234197278,
+          1.3511558623134972,
+          -0.24199999809318584
+        ],
+        "parent_link": "base_link"
+      },
+      "Rigid_10": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_8",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_10",
+        "origin_global": [
+          0.00042156249026426007,
+          1.0202165116627302,
+          1.1820519207251343
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          1.570796326794952,
+          5.914924769017849e-14,
+          -2.356194490192343
+        ],
+        "origin_xyz": [
+          0.24391518271682966,
+          2.5886421721697688,
+          0.21160249323381122
+        ],
+        "parent_link": "HexapodV3Top"
+      },
+      "Rigid_13": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_9",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_13",
+        "origin_global": [
+          1.1458630539222971,
+          0.4109751367494111,
+          0.4330275376896135
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -1.57079628974619,
+          8.67449389750385e-07,
+          -3.1415926535897607
+        ],
+        "origin_xyz": [
+          0.3991571603704286,
+          -0.5602994968698191,
+          0.005728901014689668
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Coxal_Left_v2_2"
+      },
+      "Rigid_17": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_11",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_17",
+        "origin_global": [
+          0.18555367562966235,
+          1.248247522477209,
+          1.0587071059169284
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          1.5707963267948435,
+          -4.827394412085945e-14,
+          2.3561944901923453
+        ],
+        "origin_xyz": [
+          0.24402301251163527,
+          2.4371654184855323,
+          0.21095645707197258
+        ],
+        "parent_link": "HexapodV3Top"
+      },
+      "Rigid_19": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_12",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_19",
+        "origin_global": [
+          0.8089713325624435,
+          1.6685870128504288,
+          0.4326454197232017
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -1.57079543304744,
+          5.527215380361978e-07,
+          -3.1415926535892993
+        ],
+        "origin_xyz": [
+          0.4009504425090939,
+          -1.144366609811701,
+          0.0057289288814365465
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Coxal_Right_v2"
+      },
+      "Rigid_2": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "HexapodV3Top",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_2",
+        "origin_global": [
+          0.13579829686018768,
+          -0.5291200797918519,
+          0.06164550781558434
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -6.623405152716497e-14,
+          -3.0928947026096985e-36,
+          0.0
+        ],
+        "origin_xyz": [
+          -0.07443437864685487,
+          -2.851566029424384,
+          0.15214750290445636
+        ],
+        "parent_link": "HexapodV3Mid"
+      },
+      "Rigid_25": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_4",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_25",
+        "origin_global": [
+          -0.5630046717951187,
+          0.2205763804266273,
+          0.18422513127517143
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -1.570795433047441,
+          5.527215239971169e-07,
+          -3.141592653589297
+        ],
+        "origin_xyz": [
+          0.5756332991915349,
+          -1.2810970653702847,
+          0.00572892888722647
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Coxal_Right_v2_2"
+      },
+      "Rigid_29": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_5",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_29",
+        "origin_global": [
+          0.053108604251568756,
+          0.9142894191588645,
+          1.2154640719971082
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          1.5707963267948952,
+          -1.0834665158645459e-15,
+          -0.7853981633974497
+        ],
+        "origin_xyz": [
+          0.05473921527520828,
+          2.588547102072334,
+          0.21095645707169053
+        ],
+        "parent_link": "HexapodV3Top"
+      },
+      "Rigid_31": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Tibia_Left_New",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_31",
+        "origin_global": [
+          -0.342435489356662,
+          0.401941241281065,
+          0.9151499142742836
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -3.1415901701049362,
+          -1.5707951300544478,
+          -1.5707963268869252
+        ],
+        "origin_xyz": [
+          -0.46420188653588,
+          -0.9694928536366355,
+          -0.6710920703903424
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_10"
+      },
+      "Rigid_32": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Tibia_Left_New_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_32",
+        "origin_global": [
+          0.39554945524476615,
+          1.322318918997824,
+          1.0788128113142343
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -3.1415901631567777,
+          -1.5707951230245316,
+          -1.5707963264267821
+        ],
+        "origin_xyz": [
+          -0.1297963211108422,
+          -0.7246527607132873,
+          -0.671174666086285
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_7"
+      },
+      "Rigid_33": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Tibia_Right_New",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_33",
+        "origin_global": [
+          0.46975260021992454,
+          0.6344051815200177,
+          1.4960693160192102
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          2.4913077329973786e-06,
+          -1.5707951239471734,
+          1.5707963268869252
+        ],
+        "origin_xyz": [
+          -0.1292257347774074,
+          -0.9684442403625694,
+          0.7700021549097739
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_3"
+      },
+      "Rigid_34": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_HQpod_Tibia_Right_New_2",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_34",
+        "origin_global": [
+          0.21894807215205192,
+          1.0786030186638313,
+          1.6618852458442195
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          2.4924120763210897e-06,
+          -1.5707951283857409,
+          1.57079632895757
+        ],
+        "origin_xyz": [
+          -0.46501264896532574,
+          -0.7248142979430924,
+          0.7699827803936578
+        ],
+        "parent_link": "MAGI_Assemblyy_MG996R_servo_2"
+      },
+      "Rigid_4": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_4",
+        "origin_global": [
+          0.2918255549626556,
+          0.9208540769418738,
+          1.0866561065503662
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          1.5707963267949434,
+          5.0558643359951185e-14,
+          0.7853981633974487
+        ],
+        "origin_xyz": [
+          0.054924569929618625,
+          2.437386193236829,
+          0.2116024932340928
+        ],
+        "parent_link": "HexapodV3Top"
+      },
+      "Rigid_6": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_link": "MAGI_Assemblyy_MG996R_servo_6",
+        "closing_source": "",
+        "fusion_source": "regular",
+        "is_closing": false,
+        "is_mount": false,
+        "is_passive": false,
+        "joint_type": "fixed",
+        "limits": null,
+        "name": "Rigid_6",
+        "origin_global": [
+          -0.6683393727034492,
+          1.4407938630175094,
+          0.17804102045567052
+        ],
+        "origin_method": "child_minus_parent",
+        "origin_rpy": [
+          -1.5707962897461896,
+          8.674494061049649e-07,
+          -3.141592653589761
+        ],
+        "origin_xyz": [
+          0.5734138458051676,
+          -0.4235105021600841,
+          0.005082864760975961
+        ],
+        "parent_link": "MAGI_Assemblyy_HQpod_Coxal_Left_v2"
+      }
+    },
+    "links": {
+      "HexapodV3Mid": {
+        "area_m2": 0.042933667015299985,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.17795249938964844,
+          -0.27913982256999487,
+          0.4154999923706055
+        ],
+        "bbox_min": [
+          -0.04250250816345215,
+          -0.39843013635668195,
+          0.39049999237060545
+        ],
+        "bbox_size": [
+          0.2204550075531006,
+          0.11929031378668709,
+          0.025000000000000022
+        ],
+        "body_count": 1,
+        "clean_name": "HexapodV3Mid",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/HexapodV3Mid_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.06772499561309814,
+              -0.3387849794633384,
+              0.40299999237060546
+            ],
+            "shape": "box",
+            "size": [
+              0.2204550075531006,
+              0.11929031378668709,
+              0.025000000000000022
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.17795249938964844,
+          -0.27913982256999487,
+          0.4154999923706055
+        ],
+        "collision_bbox_min": [
+          -0.04250250816345215,
+          -0.39843013635668195,
+          0.39049999237060545
+        ],
+        "collision_bbox_size": [
+          0.2204550075531006,
+          0.11929031378668709,
+          0.025000000000000022
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 5.4868147756326424e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.05693538521024938,
+          -0.33865747304711474,
+          0.39283316843135657
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.11320678234197278,
+          1.3511558623134972,
+          -0.24199999809318584
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.0003691504623396513,
+          "ixy": 9.189306742502651e-07,
+          "ixz": 3.260567723084758e-05,
+          "iyy": 0.001624727266234513,
+          "iyz": 1.642783994948438e-08,
+          "izz": 0.001982639490354335
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.43071495988716235,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/HexapodV3Mid_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/HexapodV3Mid.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HexapodV3Mid v5:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          1.0,
+          0.0,
+          3.092894702609678e-36,
+          0.0,
+          1.0,
+          1.7983113759420351e-12,
+          0.0,
+          -1.7983113759420351e-12,
+          1.0
+        ],
+        "urdf_name": "HexapodV3Mid",
+        "volume_m3": 5.4868147756326424e-05,
+        "wants_accurate_collision": false
+      },
+      "HexapodV3Top": {
+        "area_m2": 0.08391714726180217,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.27042999267578127,
+          2.6116595458984375,
+          0.24835050582885743
+        ],
+        "bbox_min": [
+          0.03042999267578126,
+          2.41425048828125,
+          0.21955949783478854
+        ],
+        "bbox_size": [
+          0.24000000000000002,
+          0.1974090576171874,
+          0.02879100799406889
+        ],
+        "body_count": 1,
+        "clean_name": "HexapodV3Top",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/HexapodV3Top_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.15042999267578128,
+              2.512955017089844,
+              0.233955001831823
+            ],
+            "shape": "box",
+            "size": [
+              0.24000000000000002,
+              0.1974090576171874,
+              0.02879100799406889
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.27042999267578127,
+          2.6116595458984375,
+          0.24835050582885743
+        ],
+        "collision_bbox_min": [
+          0.03042999267578126,
+          2.41425048828125,
+          0.21955949783478854
+        ],
+        "collision_bbox_size": [
+          0.24000000000000002,
+          0.1974090576171874,
+          0.02879100799406889
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 0.0001693064034369094,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.1485774867036556,
+          2.5129995562911236,
+          0.23796541395789056
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.038772403695117905,
+          -1.5004101671108865,
+          -0.08985249518872948
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.0055381575479067635,
+          "ixy": 1.518249486132106e-06,
+          "ixz": 8.338057284916489e-06,
+          "iyy": 0.006473322086011757,
+          "iyz": -5.310300477123775e-07,
+          "izz": 0.01181787297799275
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 1.3290552669797386,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/HexapodV3Top_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/HexapodV3Top.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HexapodV3Top v3:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          1.0000000000000067,
+          0.0,
+          2.2680057705898672e-38,
+          0.0,
+          1.0000000000000067,
+          1.8645454274691995e-12,
+          0.0,
+          -1.864545427469212e-12,
+          1.0
+        ],
+        "urdf_name": "HexapodV3Top",
+        "volume_m3": 0.0001693064034369094,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Coxal_Left_v2": {
+        "area_m2": 0.016882155730628238,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6846001186761876,
+          0.5783805084228516,
+          0.1583443563786191
+        ],
+        "bbox_min": [
+          0.6234000015258789,
+          0.504129524230957,
+          0.12955497457959983
+        ],
+        "bbox_size": [
+          0.06120011715030871,
+          0.07425098419189458,
+          0.02878938179901927
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Coxal_Left_v2",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6540000601010333,
+              0.5412550163269043,
+              0.14394966547910948
+            ],
+            "shape": "box",
+            "size": [
+              0.06120011715030871,
+              0.07425098419189458,
+              0.02878938179901927
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6846001186761876,
+          0.5783805084228516,
+          0.1583443563786191
+        ],
+        "collision_bbox_min": [
+          0.6234000015258789,
+          0.504129524230957,
+          0.12955497457959983
+        ],
+        "collision_bbox_size": [
+          0.06120011715030871,
+          0.07425098419189458,
+          0.02878938179901927
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.384445963717053e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.65451869919223,
+          0.5304830705319976,
+          0.14325877674948623
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.40487793036596775,
+          0.6540138924238351,
+          0.791767480660415
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00012243539109138557,
+          "ixy": -4.7811844353790045e-06,
+          "ixz": 2.0493283819228436e-07,
+          "iyy": 0.00012845897616715896,
+          "iyz": -1.5262111417724267e-06,
+          "izz": 0.00021247185372935684
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.26567900815178863,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.1010148933321403,
+          -0.9442939458334185,
+          -0.1617440391682951
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Coxal_Left_v2 v2:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          1.2907806444674444e-05,
+          0.7175558710855066,
+          0.696500948817809,
+          -3.4586381960067812e-06,
+          0.6965009489037001,
+          -0.7175558711098969,
+          -0.9999999999107126,
+          6.853127512390077e-06,
+          1.1472065580486298e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Coxal_Left_v2",
+        "volume_m3": 3.384445963717053e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Coxal_Left_v2_2": {
+        "area_m2": 0.016882155730628238,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6846001186761876,
+          0.5783805084228516,
+          0.1583443563786191
+        ],
+        "bbox_min": [
+          0.6234000015258789,
+          0.504129524230957,
+          0.12955497457959983
+        ],
+        "bbox_size": [
+          0.06120011715030871,
+          0.07425098419189458,
+          0.02878938179901927
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Coxal_Left_v2",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6540000601010333,
+              0.5412550163269043,
+              0.14394966547910948
+            ],
+            "shape": "box",
+            "size": [
+              0.06120011715030871,
+              0.07425098419189458,
+              0.02878938179901927
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6846001186761876,
+          0.5783805084228516,
+          0.1583443563786191
+        ],
+        "collision_bbox_min": [
+          0.6234000015258789,
+          0.504129524230957,
+          0.12955497457959983
+        ],
+        "collision_bbox_size": [
+          0.06120011715030871,
+          0.07425098419189458,
+          0.02878938179901927
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.384445963717053e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.65451869919223,
+          0.5304830705319976,
+          0.14325877674948623
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.7812624904026442,
+          1.3711941387634892,
+          0.7917674806590851
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00012243539109138557,
+          "ixy": -4.7811844353790045e-06,
+          "ixz": 2.0493283819228436e-07,
+          "iyy": 0.00012845897616715896,
+          "iyz": -1.5262111417724267e-06,
+          "izz": 0.00021247185372935684
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.26567900815178863,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.2753696667045446,
+          -1.0809140853515575,
+          -0.16174403916804111
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Left_v2_2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Coxal_Left_v2 v2:3",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -1.290780643296958e-05,
+          -0.7175558710855061,
+          -0.6965009488178099,
+          3.458634466915895e-06,
+          -0.6965009489037016,
+          0.7175558711098953,
+          -0.9999999999107139,
+          6.853130100762405e-06,
+          1.147206289608541e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Coxal_Left_v2_2",
+        "volume_m3": 3.384445963717053e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Coxal_Right_v2": {
+        "area_m2": 0.016872967891476045,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6866000366210937,
+          -0.18363946914672852,
+          0.158344376203206
+        ],
+        "bbox_min": [
+          0.6254000473022461,
+          -0.25789121631553347,
+          0.12955533672285285
+        ],
+        "bbox_size": [
+          0.061199989318847625,
+          0.07425174716880495,
+          0.028789039480353135
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Coxal_Right_v2",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6560000419616698,
+              -0.220765342731131,
+              0.14394985646302944
+            ],
+            "shape": "box",
+            "size": [
+              0.061199989318847625,
+              0.07425174716880495,
+              0.028789039480353135
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6866000366210937,
+          -0.18363946914672852,
+          0.158344376203206
+        ],
+        "collision_bbox_min": [
+          0.6254000473022461,
+          -0.25789121631553347,
+          0.12955533672285285
+        ],
+        "collision_bbox_size": [
+          0.061199989318847625,
+          0.07425174716880495,
+          0.028789039480353135
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.387468894487314e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.6564851731856076,
+          -0.20999451262092947,
+          0.14325803241829965
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.5517675148382211,
+          0.8785641005558642,
+          0.7931259846117531
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00012361728258562452,
+          "ixy": 6.091415660700039e-06,
+          "ixz": -2.158244879826854e-07,
+          "iyy": 0.00013069790706934925,
+          "iyz": 1.8336700795228145e-06,
+          "izz": 0.00021567041958239774
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.2659163082172541,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.27547749649935044,
+          -0.9440731710821219,
+          -0.16109800300617605
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Coxal_Right_v2 v2:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -3.4366524837062838e-06,
+          0.721460444225856,
+          -0.6924556501362548,
+          1.2508374155429492e-06,
+          -0.6924556501367011,
+          -0.7214604442325279,
+          -0.9999999999933112,
+          -3.3455582633735183e-06,
+          1.4772997124884568e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Coxal_Right_v2",
+        "volume_m3": 3.387468894487314e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Coxal_Right_v2_2": {
+        "area_m2": 0.016872967891476045,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6866000366210937,
+          -0.18363946914672852,
+          0.158344376203206
+        ],
+        "bbox_min": [
+          0.6254000473022461,
+          -0.25789121631553347,
+          0.12955533672285285
+        ],
+        "bbox_size": [
+          0.061199989318847625,
+          0.07425174716880495,
+          0.028789039480353135
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Coxal_Right_v2",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6560000419616698,
+              -0.220765342731131,
+              0.14394985646302944
+            ],
+            "shape": "box",
+            "size": [
+              0.061199989318847625,
+              0.07425174716880495,
+              0.028789039480353135
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6866000366210937,
+          -0.18363946914672852,
+          0.158344376203206
+        ],
+        "collision_bbox_min": [
+          0.6254000473022461,
+          -0.25789121631553347,
+          0.12955533672285285
+        ],
+        "collision_bbox_size": [
+          0.061199989318847625,
+          0.07425174716880495,
+          0.028789039480353135
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.387468894487314e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.6564851731856076,
+          -0.20999451262092947,
+          0.14325803241829965
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.17546047966118464,
+          1.1463280857827325,
+          0.7931259846112326
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00012361728258562452,
+          "ixy": 6.091415660700039e-06,
+          "ixz": -2.158244879826854e-07,
+          "iyy": 0.00013069790706934925,
+          "iyz": 1.8336700795228145e-06,
+          "izz": 0.00021567041958239774
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.2659163082172541,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.10082953867773092,
+          -1.0808190152541293,
+          -0.16109800300592098
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Coxal_Right_v2_2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Coxal_Right_v2 v2:3",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          3.43665255284602e-06,
+          -0.7214604442258559,
+          0.6924556501362567,
+          -1.2508411428923665e-06,
+          0.6924556501367032,
+          0.7214604442325283,
+          -0.9999999999933098,
+          -3.345560896279279e-06,
+          1.4772970706008032e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Coxal_Right_v2_2",
+        "volume_m3": 3.387468894487314e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Femur": {
+        "area_m2": 0.013029285151753695,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Femur",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.32233077220117223,
+              0.6408999861744208,
+              0.5329499855041997
+            ],
+            "shape": "box",
+            "size": [
+              0.08499999999999996,
+              0.026000000000000023,
+              0.05609999847412628
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "collision_bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "collision_bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 2.2407537703323958e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.32233435378979886,
+          0.6408966806485354,
+          0.5311767280768213
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.39725635613838917,
+          0.4796100363675728,
+          0.8292493349561313
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00010412893984534932,
+          "ixy": -1.8298936386995646e-08,
+          "ixz": 1.7479863671093776e-08,
+          "iyy": 0.00016088262253523278,
+          "iyz": 1.88212195828541e-08,
+          "izz": 7.700635260088351e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.17589917097109306,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.05716106098779755,
+          -0.9257280983576683,
+          -0.12769283221830643
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Femur v3:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.6214148346544988,
+          0.3587896243634833,
+          -0.6965009753908694,
+          0.603189579074235,
+          0.34824695342377876,
+          0.7175558453021649,
+          0.500005934932346,
+          -0.8660219771346263,
+          -1.2339515242014261e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Femur",
+        "volume_m3": 2.2407537703323958e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Femur_2": {
+        "area_m2": 0.013029285151753695,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Femur",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.32233077220117223,
+              0.6408999861744208,
+              0.5329499855041997
+            ],
+            "shape": "box",
+            "size": [
+              0.08499999999999996,
+              0.026000000000000023,
+              0.05609999847412628
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "collision_bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "collision_bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 2.2407537703323958e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.32233435378979886,
+          0.6408966806485354,
+          0.5311767280768213
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.08059335578100132,
+          1.488553777453443,
+          -0.6032865387421121
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00010412893984534932,
+          "ixy": -1.8298936386995646e-08,
+          "ixz": 1.7479863671093776e-08,
+          "iyy": 0.00016088262253523278,
+          "iyz": 1.88212195828541e-08,
+          "izz": 7.700635260088351e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.17589917097109306,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.31889469595336833,
+          -1.1000611080742106,
+          -0.1275947505345097
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Femur v3:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.6214148346545063,
+          0.3587896243634608,
+          0.6965009753908675,
+          0.6031895790723596,
+          0.34824695342701506,
+          -0.7175558453021619,
+          -0.5000059349345829,
+          0.8660219771333282,
+          -1.233951254273575e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Femur_2",
+        "volume_m3": 2.2407537703323958e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Femur_3": {
+        "area_m2": 0.013029285151753695,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Femur",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_3_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.32233077220117223,
+              0.6408999861744208,
+              0.5329499855041997
+            ],
+            "shape": "box",
+            "size": [
+              0.08499999999999996,
+              0.026000000000000023,
+              0.05609999847412628
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "collision_bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "collision_bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 2.2407537703323958e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.32233435378979886,
+          0.6408966806485354,
+          0.5311767280768213
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.3846059711573953,
+          0.0911604746444221,
+          0.5064033843004165
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00010412893984534932,
+          "ixy": -1.8298936386995646e-08,
+          "ixz": 1.7479863671093776e-08,
+          "iyy": 0.00016088262253523278,
+          "iyz": 1.88212195828541e-08,
+          "izz": 7.700635260088351e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.17589917097109306,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.31943525881483104,
+          -0.925754372209842,
+          -0.12704798226442773
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_3_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_3.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Femur v3:3",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.6248016987975162,
+          -0.360733839239432,
+          0.692455005330532,
+          -0.5996831995608767,
+          0.34622824058105317,
+          0.7214610631132954,
+          -0.5000028973357584,
+          -0.8660237309980123,
+          -2.0300182617916795e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Femur_3",
+        "volume_m3": 2.2407537703323958e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Femur_4": {
+        "area_m2": 0.013029285151753695,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Femur",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_4_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.32233077220117223,
+              0.6408999861744208,
+              0.5329499855041997
+            ],
+            "shape": "box",
+            "size": [
+              0.08499999999999996,
+              0.026000000000000023,
+              0.05609999847412628
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.27983077220117225,
+          0.6538999861744208,
+          0.5609999847412629
+        ],
+        "collision_bbox_min": [
+          -0.3648307722011722,
+          0.6278999861744208,
+          0.5048999862671366
+        ],
+        "collision_bbox_size": [
+          0.08499999999999996,
+          0.026000000000000023,
+          0.05609999847412628
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 2.2407537703323958e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.32233435378979886,
+          0.6408966806485354,
+          0.5311767280768213
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.008310038132445002,
+          1.9337423675857643,
+          0.5063684853846551
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00010412893984534932,
+          "ixy": -1.8298936386995646e-08,
+          "ixz": 1.7479863671093776e-08,
+          "iyy": 0.00016088262253523278,
+          "iyz": 1.88212195828541e-08,
+          "izz": 7.700635260088351e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.17589917097109306,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.0568606742101429,
+          -1.0991484700189025,
+          -0.12701308335179173
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_4_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Femur_4.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "HQpod_Femur v3:4",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.6248016987974863,
+          0.36073383923948316,
+          -0.6924550053305335,
+          0.5996831995590084,
+          -0.3462282405842904,
+          -0.7214610631132964,
+          -0.5000028973380388,
+          -0.8660237309966949,
+          -2.0300156060621414e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Femur_4",
+        "volume_m3": 2.2407537703323958e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Tibia_Left_New": {
+        "area_m2": 0.015664321337383394,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6576378748695824,
+          -0.10036148071324873,
+          0.15835049629211453
+        ],
+        "bbox_min": [
+          0.5473362220184579,
+          -0.20507588153406947,
+          0.12955949783325196
+        ],
+        "bbox_size": [
+          0.11030165285112448,
+          0.10471440082082074,
+          0.02879099845886257
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Tibia_Left_New",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6024870484440201,
+              -0.1527186811236591,
+              0.14395499706268325
+            ],
+            "shape": "cylinder",
+            "size": [
+              0.0537540134179863,
+              0.0,
+              0.02879099845886257
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6576378748695824,
+          -0.10036148071324873,
+          0.15835049629211453
+        ],
+        "collision_bbox_min": [
+          0.5473362220184579,
+          -0.20507588153406947,
+          0.12955949783325196
+        ],
+        "collision_bbox_size": [
+          0.11030165285112448,
+          0.10471440082082074,
+          0.02879099845886257
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.202445201219818e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.5823053485709502,
+          -0.14580736302838143,
+          0.13888559952797924
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.5742219903460566,
+          1.1725313684326784,
+          0.6540125977556842
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00023938975356336926,
+          "ixy": 0.00013258003398192164,
+          "ixz": -2.8554554518979425e-06,
+          "iyy": 0.0002481505543858592,
+          "iyz": -2.7078641030292908e-05,
+          "izz": 0.000443123295043063
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.25139194829575573,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HQpod_Tibia_Left_New v2:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.35879046461404773,
+          -0.6214165695278779,
+          -0.6964989947000949,
+          -0.3482460877755641,
+          -0.6031877917486452,
+          0.7175577678726714,
+          -0.8660219771178175,
+          0.5000059349663744,
+          1.213883402243864e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Tibia_Left_New",
+        "volume_m3": 3.202445201219818e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Tibia_Left_New_2": {
+        "area_m2": 0.015664321337383394,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.6576378748695824,
+          -0.10036148071324873,
+          0.15835049629211453
+        ],
+        "bbox_min": [
+          0.5473362220184579,
+          -0.20507588153406947,
+          0.12955949783325196
+        ],
+        "bbox_size": [
+          0.11030165285112448,
+          0.10471440082082074,
+          0.02879099845886257
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Tibia_Left_New",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.6024870484440201,
+              -0.1527186811236591,
+              0.14395499706268325
+            ],
+            "shape": "cylinder",
+            "size": [
+              0.0537540134179863,
+              0.0,
+              0.02879099845886257
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.6576378748695824,
+          -0.10036148071324873,
+          0.15835049629211453
+        ],
+        "collision_bbox_min": [
+          0.5473362220184579,
+          -0.20507588153406947,
+          0.12955949783325196
+        ],
+        "collision_bbox_size": [
+          0.11030165285112448,
+          0.10471440082082074,
+          0.02879099845886257
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.202445201219818e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.5823053485709502,
+          -0.14580736302838143,
+          0.13888559952797924
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.1981821120088573,
+          0.8532424247876657,
+          0.6540800212443598
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.00023938975356336926,
+          "ixy": 0.00013258003398192164,
+          "ixz": -2.8554554518979425e-06,
+          "iyy": 0.0002481505543858592,
+          "iyz": -2.7078641030292908e-05,
+          "izz": 0.000443123295043063
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.25139194829575573,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Left_New_2.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HQpod_Tibia_Left_New v2:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.3587904646140672,
+          0.6214165695278684,
+          0.6964989947000967,
+          0.34824608777232685,
+          0.6031877917505168,
+          -0.7175577678726733,
+          -0.8660219771191126,
+          0.5000059349641351,
+          1.2138836722100065e-05
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Tibia_Left_New_2",
+        "volume_m3": 3.202445201219818e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Tibia_Right_New": {
+        "area_m2": 0.015664429298696776,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.8423661573291773,
+          -0.10036148071324873,
+          0.1583504962921142
+        ],
+        "bbox_min": [
+          -0.9526677630715994,
+          -0.20490387463109422,
+          0.12955949804082897
+        ],
+        "bbox_size": [
+          0.11030160574242209,
+          0.10454239391784549,
+          0.028790998251285227
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Tibia_Right_New",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.8975169602003883,
+              -0.15263267767217148,
+              0.1439549971664716
+            ],
+            "shape": "cylinder",
+            "size": [
+              0.05371099991506689,
+              0.0,
+              0.028790998251285227
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.8423661573291773,
+          -0.10036148071324873,
+          0.1583504962921142
+        ],
+        "collision_bbox_min": [
+          -0.9526677630715994,
+          -0.20490387463109422,
+          0.12955949804082897
+        ],
+        "collision_bbox_size": [
+          0.11030160574242209,
+          0.10454239391784549,
+          0.028790998251285227
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.2045856774452e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.8771134732292021,
+          -0.14584752867041312,
+          0.138886657298195
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          -0.30538072264606525,
+          1.2724165455097092,
+          0.9090786272727768
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.0002394829764464368,
+          "ixy": -0.00014151667029324577,
+          "ixz": 1.1079348926967825e-05,
+          "iyy": 0.00034041125247130655,
+          "iyz": -2.7355359762252715e-05,
+          "izz": 0.0005358011860660816
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.25155997567944816,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HQpod_Tibia_Right_New v2:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.36073467460891157,
+          0.6248034235929596,
+          0.6924530138582095,
+          0.3462273702217852,
+          -0.5996814025080078,
+          0.7214629745145167,
+          0.8660237309936191,
+          0.5000028973441493,
+          1.8293465834146774e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Tibia_Right_New",
+        "volume_m3": 3.2045856774452e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_HQpod_Tibia_Right_New_2": {
+        "area_m2": 0.015664429298696776,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          -0.8423661573291773,
+          -0.10036148071324873,
+          0.1583504962921142
+        ],
+        "bbox_min": [
+          -0.9526677630715994,
+          -0.20490387463109422,
+          0.12955949804082897
+        ],
+        "bbox_size": [
+          0.11030160574242209,
+          0.10454239391784549,
+          0.028790998251285227
+        ],
+        "body_count": 1,
+        "clean_name": "HQpod_Tibia_Right_New",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              -0.8975169602003883,
+              -0.15263267767217148,
+              0.1439549971664716
+            ],
+            "shape": "cylinder",
+            "size": [
+              0.05371099991506689,
+              0.0,
+              0.028790998251285227
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          -0.8423661573291773,
+          -0.10036148071324873,
+          0.1583504962921142
+        ],
+        "collision_bbox_min": [
+          -0.9526677630715994,
+          -0.20490387463109422,
+          0.12955949804082897
+        ],
+        "collision_bbox_size": [
+          0.11030160574242209,
+          0.10454239391784549,
+          0.028790998251285227
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.2045856774452e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          -0.8771134732292021,
+          -0.14584752867041312,
+          0.138886657298195
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.6816606589852867,
+          0.7525016503536958,
+          0.9091442537544415
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.0002394829764464368,
+          "ixy": -0.00014151667029324577,
+          "ixz": 1.1079348926967825e-05,
+          "iyy": 0.00034041125247130655,
+          "iyz": -2.7355359762252715e-05,
+          "izz": 0.0005358011860660816
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.25155997567944816,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_HQpod_Tibia_Right_New_2.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "HQpod_Tibia_Right_New v2:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.3607346746088584,
+          -0.6248034235929915,
+          -0.6924530138582088,
+          -0.3462273702185473,
+          0.5996814025098761,
+          -0.7214629745145161,
+          0.8660237309949399,
+          0.5000028973418695,
+          1.8293492390110716e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_HQpod_Tibia_Right_New_2",
+        "volume_m3": 3.2045856774452e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.09369697362473653,
+          0.9369760261259422,
+          0.12174999804536334
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.7071067811865477,
+          7.058587495532885e-14,
+          0.707106781186547,
+          0.7071067811865482,
+          1.864545427469218e-12,
+          -0.7071067811865482,
+          -1.3689913589537935e-12,
+          0.9999999999999998,
+          1.271605024064898e-12
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_10": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_10_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.3209264406741353,
+          1.1577701376065186,
+          0.10343132335493
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.3552134143983678,
+          -1.1353146496775708,
+          -0.09825621777743751
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_10_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_10.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "MG996R_servo v1:7",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.6214148346545169,
+          0.6965009753908753,
+          -0.35878962436347095,
+          0.6031895790723691,
+          -0.71755584530217,
+          -0.34824695342702716,
+          -0.5000059349345912,
+          -1.2339512542935843e-05,
+          -0.8660219771333364
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_10",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_11": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_11_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.2827954162067532,
+          0.9367552513746457,
+          0.1211039618832431
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_11_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_11.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:8",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.7071067811865487,
+          -8.337909298566217e-16,
+          0.7071067811865486,
+          0.7071067811865482,
+          1.7945271258749026e-12,
+          0.707106781186548,
+          -1.2701587714729829e-12,
+          0.9999999999999998,
+          -1.2652486612008156e-12
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_11",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_12": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_12_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.291741145328628,
+          0.896900237601256,
+          0.11669896215457977
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_12_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_12.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:9",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          3.819387279316853e-06,
+          0.6924550053305352,
+          -0.7214610631060445,
+          -8.520703470612544e-07,
+          0.7214610631132989,
+          0.6924550053329886,
+          0.999999999992344,
+          -2.0300182612590054e-06,
+          3.3455595827893266e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_12",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_2": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_2_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.32186393060279345,
+          0.8679884886571417,
+          0.10305766046679951
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.3560241406341431,
+          -0.8906364499045973,
+          -0.09788299864406509
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_2_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_2.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "MG996R_servo v1:10",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.6248016987975212,
+          0.6924550053305344,
+          0.3607338392394371,
+          -0.599683199560883,
+          0.7214610631132976,
+          -0.3462282405810583,
+          -0.5000028973357629,
+          -2.0300182618750453e-06,
+          0.8660237309980218
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_2",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_3": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_3_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.0544320024221784,
+          1.1569143535715352,
+          0.10302276155394621
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.02027179239082632,
+          -1.1342663923240686,
+          -0.09784809973129552
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_3_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_3.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "MG996R_servo v1:11",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.6248016987974911,
+          -0.6924550053305365,
+          -0.36073383923948976,
+          0.599683199559015,
+          -0.7214610631132996,
+          0.34622824058429624,
+          -0.5000028973380436,
+          -2.0300156063087957e-06,
+          0.8660237309967033
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_3",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_4": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_4_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.08455478769634495,
+          1.1280026046274743,
+          0.11666406324183758
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_4_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_4.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:12",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -3.81938733829981e-06,
+          -0.6924550053305363,
+          0.7214610631060453,
+          8.520740849929006e-07,
+          -0.7214610631132993,
+          -0.6924550053329921,
+          0.9999999999923417,
+          -2.0300156055152974e-06,
+          3.3455622162289013e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_4",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_5": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_5_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.09351161897032619,
+          1.0881369349614471,
+          0.12110396188296103
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_5_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_5.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:13",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          0.7071067811865488,
+          -5.29136399951904e-16,
+          -0.707106781186553,
+          -0.7071067811865508,
+          1.863439050086725e-12,
+          -0.7071067811865506,
+          1.3195161821097117e-12,
+          0.9999999999999979,
+          1.319801965944332e-12
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_5",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_6": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_6_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.08501708947666195,
+          0.8970300981371164,
+          0.1173442244278528
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_6_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_6.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:2",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -1.3511985802133829e-05,
+          -0.6965009753908706,
+          -0.7175558452810499,
+          4.081081587862756e-06,
+          0.7175558453021657,
+          -0.6965009754882202,
+          0.9999999999003879,
+          -1.2339515241665924e-05,
+          -6.853127088681293e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_6",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_7": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_7_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.05512931626703576,
+          0.8680190688252813,
+          0.1035294050389418
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          -0.02084234254281106,
+          -0.8904745567542348,
+          -0.09835429946136692
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_7_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_7.dae",
+        "needs_mesh_bake": true,
+        "occurrence_path": "MG996R_servo v1:3",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.6214148346544983,
+          -0.6965009753908719,
+          0.3587896243634814,
+          -0.6031895790742354,
+          0.7175558453021665,
+          0.34824695342378165,
+          -0.5000059349323461,
+          -1.233951524252018e-05,
+          -0.8660219771346259
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_7",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_8": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_8_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.2826875864119476,
+          1.0882320050588823,
+          0.12174999804508174
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_8_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_8.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:4",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          -0.7071067811865468,
+          -8.229073489831295e-14,
+          -0.7071067811865496,
+          -0.7071067811865493,
+          1.8645454274692217e-12,
+          0.7071067811865493,
+          1.2592834679036658e-12,
+          1.0000000000000002,
+          -1.3739481139142237e-12
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_8",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "MAGI_Assemblyy_MG996R_servo_9": {
+        "area_m2": 0.0075456387390625025,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "body_count": 2,
+        "clean_name": "MG996R_servo",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_9_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.020349101298564272,
+              0.021747020561473037,
+              0.0
+            ],
+            "shape": "box",
+            "size": [
+              0.0533,
+              0.043494041122946074,
+              0.02
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.04699910129856427,
+          0.043494041122946074,
+          0.01
+        ],
+        "collision_bbox_min": [
+          -0.00630089870143573,
+          -3.794707603699266e-19,
+          -0.01
+        ],
+        "collision_bbox_size": [
+          0.0533,
+          0.043494041122946074,
+          0.02
+        ],
+        "collision_body_count": 2,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 3.0582542003515474e-05,
+        "color_rgb": [
+          0.2980392156862745,
+          0.2980392156862745,
+          0.2980392156862745
+        ],
+        "com_link_local": [
+          0.020183068827929168,
+          0.019509294468097106,
+          1.7940559110473395e-05
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.29103866746450946,
+          1.1287591082947355,
+          0.11724614274394844
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 3.608014917000353e-05,
+          "ixy": 6.266312443139717e-07,
+          "ixz": 4.838322852917315e-08,
+          "iyy": 4.048873091249223e-05,
+          "iyz": -8.607660947091026e-08,
+          "izz": 6.11659315132927e-05
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.24007295472759646,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_9_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/MAGI_Assemblyy_MG996R_servo_9.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "MG996R_servo v1:6",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          1.3511985778747324e-05,
+          0.6965009753908709,
+          0.7175558452810504,
+          -4.0810778467370695e-06,
+          -0.7175558453021659,
+          0.6965009754882225,
+          0.999999999900392,
+          -1.2339512542195702e-05,
+          -6.853129677955205e-06
+        ],
+        "urdf_name": "MAGI_Assemblyy_MG996R_servo_9",
+        "volume_m3": 3.0582542003515474e-05,
+        "wants_accurate_collision": false
+      },
+      "base_link": {
+        "area_m2": 0.046208335626754755,
+        "assembly": "MAGI_Assemblyy",
+        "bbox_max": [
+          0.30325008392333985,
+          1.0849500274658204,
+          0.1484999942779541
+        ],
+        "bbox_min": [
+          0.08375009536743164,
+          0.9400499725341797,
+          0.12149999618530273
+        ],
+        "bbox_size": [
+          0.21949998855590822,
+          0.1449000549316407,
+          0.02699999809265137
+        ],
+        "body_count": 1,
+        "clean_name": "base_link",
+        "collision": {
+          "mesh_path": "meshes/MAGI_Assemblyy/base_link_collision.stl",
+          "origin_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_xyz": null,
+          "primitive": {
+            "orientation_matrix": null,
+            "origin_rpy": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_xyz": [
+              0.19350008964538573,
+              1.0125,
+              0.13499999523162842
+            ],
+            "shape": "box",
+            "size": [
+              0.21949998855590822,
+              0.1449000549316407,
+              0.02699999809265137
+            ]
+          },
+          "source": "primitive"
+        },
+        "collision_bbox_max": [
+          0.30325008392333985,
+          1.0849500274658204,
+          0.1484999942779541
+        ],
+        "collision_bbox_min": [
+          0.08375009536743164,
+          0.9400499725341797,
+          0.12149999618530273
+        ],
+        "collision_bbox_size": [
+          0.21949998855590822,
+          0.1449000549316407,
+          0.02699999809265137
+        ],
+        "collision_body_count": 1,
+        "collision_body_names": [],
+        "collision_excluded_body_names": [],
+        "collision_override": "",
+        "collision_volume_m3": 5.878119984825001e-05,
+        "color_rgb": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569
+        ],
+        "com_link_local": [
+          0.18894977294271229,
+          1.0125657975274562,
+          0.12481412187755286
+        ],
+        "frame_rebase_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame_rule": "keep",
+        "global_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "has_collision_exclusions": false,
+        "has_explicit_collision": false,
+        "has_visual_mesh": true,
+        "inertia_at_com": {
+          "ixx": 0.0007929839651940607,
+          "ixy": 8.295236797462024e-08,
+          "ixz": 1.4192076069792503e-06,
+          "iyy": 0.001825251998965223,
+          "iyz": -2.865923347250554e-08,
+          "izz": 0.002601023811398706
+        },
+        "inertial_origin_xyz": null,
+        "is_empty": false,
+        "is_frame_only": false,
+        "is_merged": false,
+        "mass_kg": 0.4614324188087625,
+        "material_name": "Steel",
+        "merged_member_paths": [],
+        "mesh_bake_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_collision": "meshes/MAGI_Assemblyy/base_link_collision.stl",
+        "mesh_collision_input": "",
+        "mesh_origin_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh_visual": "meshes/MAGI_Assemblyy/base_link.dae",
+        "needs_mesh_bake": false,
+        "occurrence_path": "base_link v3:1",
+        "rigid_group_collision_offset": null,
+        "rigid_group_collision_path": null,
+        "rigid_group_name": null,
+        "source_world_rotation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "urdf_name": "base_link",
+        "volume_m3": 5.878119984825001e-05,
+        "wants_accurate_collision": false
+      }
+    },
+    "name": "MAGI_Assemblyy",
+    "root_link": "base_link",
+    "warnings": []
+  }
+}

@@ -1,0 +1,4 @@
+Quadruped Hexapod MG996R by diycnc on Thingiverse: https://www.thingiverse.com/thing:2726435
+
+Summary:
+Build Log: 4-18-2018Designed a new coxa joint. Works better for my setup by allowing more slack in the servo wires. You can follow the build if you like via twitter.https://twitter.com/phgoepfertBuild Log: 3-19-2018Making good progress now. The remainder of the files have been uploaded. Enjoy. The hexabot is done in regards to design and printing at this point. I might add some other extras later.Build Log: 3-9-2018The legs are done. Working on the body parts.Build Log: 1-8-2018I have been stream lining the files and hope to upload them in the near-ish future. :)This is a side project that will use standard size servo's for a Quadruped. This project will take a while to finish. I am only working on it while I wait for parts for my TRAV 2.1 build. These stl files are not remotely ready to be used.

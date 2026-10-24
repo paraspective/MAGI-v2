@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="MAGI_Assembly_URDF">
+
+  <!-- Materials (shared across all assemblies) -->
+  <material name="Steel">
+    <color rgba="0.627 0.627 0.627 1.0"/>
+  </material>
+
+  <!-- Assembly includes -->
+  <xacro:include filename="$(find MAGI_Assembly_URDF_description)/urdf/assemblies/MAGI_Assembly_URDF.urdf.xacro"/>
+
+  <!-- Instantiate assemblies -->
+  <xacro:MAGI_Assembly_URDF prefix=""/>
+
+</robot>

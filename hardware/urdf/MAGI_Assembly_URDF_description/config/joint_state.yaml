@@ -1,0 +1,33 @@
+# Joint configuration for joint_state_publisher_gui
+
+joint_state_publisher:
+  ros__parameters:
+    # Joint names and default positions
+    zeros:
+      Revolute_12: 0.0
+      Revolute_14: 0.0
+      Revolute_15: 0.0
+      Revolute_24: 0.0
+      Revolute_26: 0.0
+      Revolute_27: 0.0
+      Revolute_31: 0.0
+      Revolute_32: 0.0
+      Revolute_33: 0.0
+      Revolute_5: 0.0
+      Revolute_7: 0.0
+      Revolute_8: 0.0
+
+    # Joints to publish
+    source_list:
+      - Revolute_12
+      - Revolute_14
+      - Revolute_15
+      - Revolute_24
+      - Revolute_26
+      - Revolute_27
+      - Revolute_31
+      - Revolute_32
+      - Revolute_33
+      - Revolute_5
+      - Revolute_7
+      - Revolute_8
