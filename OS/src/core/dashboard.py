@@ -29,6 +29,7 @@ except (AttributeError, OSError):
 
 from common.logger import get_logger
 from core.messages import decode
+from core.lifecycle import LifecycleNode
 
 log = get_logger("dashboard")
 
