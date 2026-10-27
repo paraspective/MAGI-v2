@@ -1,0 +1,1321 @@
+<?xml version="1.0" ?>
+<robot name="MAGI_iteration3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find MAGI_iteration3_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find MAGI_iteration3_description)/urdf/MAGI_iteration3.trans" />
+<xacro:include filename="$(find MAGI_iteration3_description)/urdf/MAGI_iteration3.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="1.1037677850336173e-06 0.07572553849628798 0.00028770018651695043" rpy="0 0 0"/>
+    <mass value="0.30423276102370894"/>
+    <inertia ixx="0.000813" iyy="0.000518" izz="0.001317" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FrameSideServoHolder__3__1">
+  <inertial>
+    <origin xyz="0.023391951771579086 -0.00757763912790969 -0.004000329240551228" rpy="0 0 0"/>
+    <mass value="0.07358955876902946"/>
+    <inertia ixx="2.3e-05" iyy="1.5e-05" izz="3.4e-05" ixy="1.1e-05" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.039892 -0.018019 -0.004189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.039892 -0.018019 -0.004189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FrameSideServoHolder_1">
+  <inertial>
+    <origin xyz="0.021966982103494254 0.01525954315782721 -3.292867649271286e-07" rpy="0 0 0"/>
+    <mass value="0.07358955876902946"/>
+    <inertia ixx="1.5e-05" iyy="2.3e-05" izz="3.4e-05" ixy="-1.1e-05" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02469 -0.150139 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02469 -0.150139 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FrameSideServoHolder__1__1">
+  <inertial>
+    <origin xyz="-0.02196698211772073 0.015259543157827266 -3.261422590358873e-07" rpy="0 0 0"/>
+    <mass value="0.07358955876902946"/>
+    <inertia ixx="1.5e-05" iyy="2.3e-05" izz="3.4e-05" ixy="1.1e-05" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02469 -0.150139 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02469 -0.150139 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FrameSideServoHolder__2__1">
+  <inertial>
+    <origin xyz="-0.015259789833888426 -0.02196710855293095 -3.2614082294020593e-07" rpy="0 0 0"/>
+    <mass value="0.07358955876902946"/>
+    <inertia ixx="2.3e-05" iyy="1.5e-05" izz="3.4e-05" ixy="-1.1e-05" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.048 -0.03245 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.048 -0.03245 -0.000189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/FrameSideServoHolder__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PowerCompartment_1">
+  <inertial>
+    <origin xyz="0.028959 -0.007139 0.007811" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.028959 -0.007139 0.007811" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/PowerCompartment_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.028959 -0.007139 0.007811" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/PowerCompartment_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ElectronicsPlate_1">
+  <inertial>
+    <origin xyz="-0.02895695400238311 0.07376693980803609 0.001465748305236313" rpy="0 0 0"/>
+    <mass value="0.22606974634431312"/>
+    <inertia ixx="0.000329" iyy="0.000118" izz="0.000446" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.028959 -0.007139 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/ElectronicsPlate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.028959 -0.007139 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/ElectronicsPlate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ControllerPlate_1">
+  <inertial>
+    <origin xyz="0.023107292055285444 -0.05319690822273254 0.00147382901760436" rpy="0 0 0"/>
+    <mass value="0.033199487165877506"/>
+    <inertia ixx="4.5e-05" iyy="2.2e-05" izz="6.7e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02281 -0.129019 -0.013689" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/ControllerPlate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02281 -0.129019 -0.013689" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/ControllerPlate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CarapaceFront_1">
+  <inertial>
+    <origin xyz="0.02885111094751149 -0.004088097308252022 0.029923255110887875" rpy="0 0 0"/>
+    <mass value="0.14354973074484495"/>
+    <inertia ixx="3.1e-05" iyy="0.00018" izz="0.000157" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.028959 -0.007139 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceFront_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.028959 -0.007139 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceFront_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CarapaceBack_1">
+  <inertial>
+    <origin xyz="0.050000242802708546 0.01647017757474159 0.028091829568643697" rpy="0 0 0"/>
+    <mass value="0.1256083343696162"/>
+    <inertia ixx="6.4e-05" iyy="0.000159" izz="0.000146" ixy="0.0" iyz="-1.6e-05" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05 -0.131371 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceBack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05 -0.131371 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceBack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CarapaceMid_1">
+  <inertial>
+    <origin xyz="0.050000271418539084 0.009851764133430543 0.040224352835510485" rpy="0 0 0"/>
+    <mass value="0.1940199726565081"/>
+    <inertia ixx="0.00026" iyy="0.000266" izz="0.000437" ixy="0.0" iyz="6e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05 -0.065639 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceMid_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05 -0.065639 -0.009189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/CarapaceMid_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo_1">
+  <inertial>
+    <origin xyz="-0.02048223993323558 0.013436019049076188 -0.00848537974412046" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.9e-05" iyy="4.9e-05" izz="4e-05" ixy="1.3e-05" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.079844 0.014861 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.079844 0.014861 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__6__1">
+  <inertial>
+    <origin xyz="0.020507777310773696 0.01341118212101158 -0.008485376564198857" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.9e-05" iyy="4.9e-05" izz="4e-05" ixy="-1.3e-05" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07982 0.01482 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07982 0.01482 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__1__1">
+  <inertial>
+    <origin xyz="-0.013436678038109003 -0.020482654490806967 -0.008485379790332623" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.9e-05" iyy="4.9e-05" izz="4e-05" ixy="-1.3e-05" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.07196 -0.181959 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.07196 -0.181959 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__2__1">
+  <inertial>
+    <origin xyz="0.020482308438211957 -0.013436025285468028 -0.008485376565634748" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.9e-05" iyy="4.9e-05" izz="4e-05" ixy="1.3e-05" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079031 -0.174887 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079031 -0.174887 -0.008189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Left_v2__1__1">
+  <inertial>
+    <origin xyz="0.02359639565922804 -0.025453716595165352 -0.024490306072811427" rpy="0 0 0"/>
+    <mass value="0.26567900815178863"/>
+    <inertia ixx="0.000173" iyy="0.000168" izz="0.000122" ixy="4.2e-05" iyz="3e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.066303 0.008391 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Left_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.066303 0.008391 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Left_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Right_v2__1__1">
+  <inertial>
+    <origin xyz="-0.025591704492763587 -0.023443854091120864 -0.024456601585133745" rpy="0 0 0"/>
+    <mass value="0.2659163082172541"/>
+    <inertia ixx="0.000169" iyy="0.000177" izz="0.000124" ixy="-4.2e-05" iyz="4e-06" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.066279 0.00835 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Right_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.066279 0.00835 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Right_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__3__1">
+  <inertial>
+    <origin xyz="-0.010707203009949331 0.0038769020242959418 -0.024316137432473194" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="5.1e-05" iyy="5.1e-05" izz="3.6e-05" ixy="1e-05" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105796 -0.197818 -0.020288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105796 -0.197818 -0.020288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__7__1">
+  <inertial>
+    <origin xyz="0.0038773348974140143 0.010706564166292232 -0.024316137386266336" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="5.1e-05" iyy="5.1e-05" izz="3.6e-05" ixy="-1e-05" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.095703 0.048697 -0.020288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.095703 0.048697 -0.020288" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__4__1">
+  <inertial>
+    <origin xyz="0.010710300846922288 0.003911982751698101 -0.024316159006259105" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="5.1e-05" iyy="5e-05" izz="3.6e-05" ixy="-1e-05" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.10596 -0.197591 -0.020289" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.10596 -0.197591 -0.020289" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__5__1">
+  <inertial>
+    <origin xyz="-0.00296407632372582 0.011011014473838121 -0.024316159004822833" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="5.2e-05" iyy="5e-05" izz="3.6e-05" ixy="1e-05" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.098868 0.046124 -0.020289" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.098868 0.046124 -0.020289" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Right_v2_1">
+  <inertial>
+    <origin xyz="-0.025585007254507047 0.02345179831347083 -0.02445660158657032" rpy="0 0 0"/>
+    <mass value="0.2659163082172541"/>
+    <inertia ixx="0.00017" iyy="0.000177" izz="0.000124" ixy="4.2e-05" iyz="-4e-06" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06549 -0.168417 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Right_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06549 -0.168417 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Right_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Left_v2_1">
+  <inertial>
+    <origin xyz="0.02545307290235156 0.023596964862690945 -0.02449030611901859" rpy="0 0 0"/>
+    <mass value="0.26567900815178863"/>
+    <inertia ixx="0.000168" iyy="0.000173" izz="0.000122" ixy="-4.2e-05" iyz="-3e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06549 -0.168417 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Left_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06549 -0.168417 -0.020189" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Left_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Femur__2__1">
+  <inertial>
+    <origin xyz="9.553816998900122e-05 0.03613112106593805 -0.014687697621547414" rpy="0 0 0"/>
+    <mass value="0.17566589768846375"/>
+    <inertia ixx="9.8e-05" iyy="9.7e-05" izz="0.000146" ixy="2.1e-05" iyz="1.7e-05" ixz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.109344 -0.186983 0.013863" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.109344 -0.186983 0.013863" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Femur_1">
+  <inertial>
+    <origin xyz="0.036130561127302466 -9.616628480912243e-05 -0.014687697575342384" rpy="0 0 0"/>
+    <mass value="0.17566589768846375"/>
+    <inertia ixx="9.7e-05" iyy="9.8e-05" izz="0.000146" ixy="-2.1e-05" iyz="-1.8e-05" ixz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.084869 0.052245 0.013863" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.084869 0.052245 0.013863" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Femur__1__1">
+  <inertial>
+    <origin xyz="-0.0004023665739716631 0.03622930919661163 -0.014656000978827981" rpy="0 0 0"/>
+    <mass value="0.17566589768846375"/>
+    <inertia ixx="9.8e-05" iyy="9.7e-05" izz="0.000146" ixy="-2.1e-05" iyz="1.7e-05" ixz="-1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.109448 -0.186736 0.013861" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.109448 -0.186736 0.013861" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Femur__3__1">
+  <inertial>
+    <origin xyz="-0.03612626415054403 0.002756472002943572 -0.014656000977390836" rpy="0 0 0"/>
+    <mass value="0.17566589768846375"/>
+    <inertia ixx="0.0001" iyy="9.5e-05" izz="0.000146" ixy="2e-05" iyz="-1.6e-05" ixz="-1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.088359 0.050544 0.013861" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.088359 0.050544 0.013861" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Femur__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__8__1">
+  <inertial>
+    <origin xyz="0.02062502665928942 0.008163202327247793 -0.004932480322048752" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.1e-05" iyy="4.2e-05" izz="5.5e-05" ixy="-1e-06" iyz="-8e-06" ixz="8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.120122 0.088564 0.043201" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.120122 0.088564 0.043201" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__9__1">
+  <inertial>
+    <origin xyz="-0.0199039654760734 0.009806370969691572 -0.004901852065042976" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.1e-05" iyy="4.2e-05" izz="5.5e-05" ixy="1e-06" iyz="-7e-06" ixz="-8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.126532 0.083933 0.043026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.126532 0.083933 0.043026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__10__1">
+  <inertial>
+    <origin xyz="-0.008162820550616012 0.020624572542927128 -0.0049324803682502735" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.2e-05" iyy="4.1e-05" izz="5.5e-05" ixy="1e-06" iyz="8e-06" ixz="8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.145662 -0.222237 0.043201" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.145662 -0.222237 0.043201" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG996R_servo__11__1">
+  <inertial>
+    <origin xyz="0.008033630946341325 0.020682877562640006 -0.004901852066480528" rpy="0 0 0"/>
+    <mass value="0.24006919411381664"/>
+    <inertia ixx="4.2e-05" iyy="4.1e-05" izz="5.5e-05" ixy="-1e-06" iyz="8e-06" ixz="-8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.146036 -0.221854 0.043026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.146036 -0.221854 0.043026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/MG996R_servo__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Tibia_Left_New__1__1">
+  <inertial>
+    <origin xyz="-0.011908861250263053 -0.00764418347514495 -0.00872602147419143" rpy="0 0 0"/>
+    <mass value="0.2514897776314179"/>
+    <inertia ixx="0.000376" iyy="0.000429" izz="0.000127" ixy="-4e-05" iyz="3.6e-05" ixz="5.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.161541 -0.251929 0.055946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Left_New__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.161541 -0.251929 0.055946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Left_New__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Tibia_Left_New_1">
+  <inertial>
+    <origin xyz="-0.007644723281415605 0.011909243739797168 -0.008726021427991303" rpy="0 0 0"/>
+    <mass value="0.2514897776314179"/>
+    <inertia ixx="0.000429" iyy="0.000376" izz="0.000127" ixy="4e-05" iyz="-5.3e-05" ixz="3.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.149815 0.104443 0.055946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Left_New_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.149815 0.104443 0.055946" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Left_New_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Tibia_Right_New__1__1">
+  <inertial>
+    <origin xyz="0.004713291698294625 0.007862922772288047 0.00012013170426751485" rpy="0 0 0"/>
+    <mass value="0.2515053678375531"/>
+    <inertia ixx="0.000509" iyy="0.000464" izz="0.000142" ixy="-5.2e-05" iyz="-2.1e-05" ixz="-1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.153657 0.094046 0.064432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Right_New__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.153657 0.094046 0.064432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Right_New__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Tibia_Right_New_1">
+  <inertial>
+    <origin xyz="0.009193693067960973 -0.004921706022489841 0.0008869208393009476" rpy="0 0 0"/>
+    <mass value="0.2515053678375531"/>
+    <inertia ixx="0.000455" iyy="0.000518" izz="0.000142" ixy="4.8e-05" iyz="1.6e-05" ixz="-2.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.158475 -0.247994 0.064432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Right_New_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.158475 -0.247994 0.064432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Tibia_Right_New_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__2__1">
+  <inertial>
+    <origin xyz="0.0818598261373454 0.05611360064907819 0.0074080483026890374" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="5e-06" ixy="-2e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.14151 0.057835 0.028402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.14151 0.057835 0.028402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned_1">
+  <inertial>
+    <origin xyz="-0.0009051300379588484 -0.02097174685558793 0.1272380887085881" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="5e-06" iyy="5e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.114567 -0.001426 0.131825" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.114567 -0.001426 0.131825" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__1__1">
+  <inertial>
+    <origin xyz="-0.09695163953720268 -0.18130902951531952 -0.053000446930864066" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="4e-06" ixy="-2e-06" iyz="-1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.062837 -0.123001 -0.005262" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.062837 -0.123001 -0.005262" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__3__1">
+  <inertial>
+    <origin xyz="0.13502149246189485 0.1616009061923676 0.09671408870715059" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="5e-06" iyy="5e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.215952 -0.054847 0.101301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.215952 -0.054847 0.101301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__7__1">
+  <inertial>
+    <origin xyz="0.06935651379008118 0.3083834383145373 -0.036348446787435866" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="4e-06" ixy="2e-06" iyz="1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.192733 0.051196 0.011365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.192733 0.051196 0.011365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__5__1">
+  <inertial>
+    <origin xyz="0.037171513725293974 -0.06291786205220185 -0.1439029516987469" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="5e-06" ixy="2e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.096068 -0.224742 -0.122909" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.096068 -0.224742 -0.122909" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__8__1">
+  <inertial>
+    <origin xyz="-0.156908467546811 0.14056478324013716 -0.05723567478384152" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="5e-06" iyy="5e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.237425 -0.07583 -0.052648" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.237425 -0.07583 -0.052648" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__4__1">
+  <inertial>
+    <origin xyz="-0.2787141222649826 0.09917683151854204 0.0013372106332179418" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="4e-06" ixy="-2e-06" iyz="1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.401456 -0.158205 0.049175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.401456 -0.158205 0.049175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__6__1">
+  <inertial>
+    <origin xyz="-0.41115534057600994 -0.15951370452159228 -0.6062856313417855" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="5e-06" ixy="-2e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.469999 -0.321392 -0.584686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.469999 -0.321392 -0.584686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__10__1">
+  <inertial>
+    <origin xyz="0.05401969725210544 -0.02827328707436252 0.007450045122767299" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="5e-06" ixy="2e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.00569 -0.026475 0.028444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.00569 -0.026475 0.028444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__11__1">
+  <inertial>
+    <origin xyz="-0.03176096577966522 -0.010430042982943803 -0.09831767508030119" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="5e-06" iyy="5e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.146076 0.013024 -0.09378" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.146076 0.013024 -0.09378" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__9__1">
+  <inertial>
+    <origin xyz="-0.16499697434473828 0.05351437976374922 0.03021090998381925" rpy="0 0 0"/>
+    <mass value="0.031915376327651755"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="4e-06" ixy="2e-06" iyz="-1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.320277 0.119171 0.078117" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.320277 0.119171 0.078117" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PowerCompDoor_1">
+  <inertial>
+    <origin xyz="4.212307800230838e-05 -0.004647978969942457 0.01660171795638483" rpy="0 0 0"/>
+    <mass value="0.04384896017316371"/>
+    <inertia ixx="4e-06" iyy="3.8e-05" izz="3.8e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.157139 0.033811" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/PowerCompDoor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.157139 0.033811" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find MAGI_iteration3_description)/meshes/PowerCompDoor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 1" type="fixed">
+  <origin xyz="0.039892 0.018019 0.004189" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FrameSideServoHolder__3__1"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="0.02469 0.150139 0.000189" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FrameSideServoHolder_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="-0.02469 0.150139 0.000189" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FrameSideServoHolder__1__1"/>
+</joint>
+
+<joint name="Rigid 4" type="fixed">
+  <origin xyz="-0.048 0.03245 0.000189" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FrameSideServoHolder__2__1"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.028959 0.007139 -0.007811" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="PowerCompartment_1"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.028959 0.007139 0.008189" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="ElectronicsPlate_1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-0.051769 0.12188 0.0055" rpy="0 0 0"/>
+  <parent link="ElectronicsPlate_1"/>
+  <child link="ControllerPlate_1"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="-0.057918 0.0 0.001" rpy="0 0 0"/>
+  <parent link="ElectronicsPlate_1"/>
+  <child link="CarapaceFront_1"/>
+</joint>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="-0.078959 0.124232 0.001" rpy="0 0 0"/>
+  <parent link="ElectronicsPlate_1"/>
+  <child link="CarapaceBack_1"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="-0.078959 0.0585 0.001" rpy="0 0 0"/>
+  <parent link="ElectronicsPlate_1"/>
+  <child link="CarapaceMid_1"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="0.039952 -0.03288 0.004" rpy="0 0 0"/>
+  <parent link="FrameSideServoHolder__3__1"/>
+  <child link="MG996R_servo_1"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="-0.03182 -0.04727 0.008" rpy="0 0 0"/>
+  <parent link="FrameSideServoHolder__2__1"/>
+  <child link="MG996R_servo__6__1"/>
+</joint>
+
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="0.04727 0.03182 0.008" rpy="0 0 0"/>
+  <parent link="FrameSideServoHolder_1"/>
+  <child link="MG996R_servo__1__1"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="-0.054341 0.024748 0.008" rpy="0 0 0"/>
+  <parent link="FrameSideServoHolder__1__1"/>
+  <child link="MG996R_servo__2__1"/>
+</joint>
+
+<joint name="Revolute 15" type="revolute">
+  <origin xyz="-0.013541 0.00647 0.012" rpy="0 0 0"/>
+  <parent link="MG996R_servo_1"/>
+  <child link="HQpod_Coxal_Left_v2__1__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 18" type="revolute">
+  <origin xyz="0.013541 0.00647 0.012" rpy="0 0 0"/>
+  <parent link="MG996R_servo__6__1"/>
+  <child link="HQpod_Coxal_Right_v2__1__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 19" type="fixed">
+  <origin xyz="0.040306 0.029401 9.9e-05" rpy="0 0 0"/>
+  <parent link="HQpod_Coxal_Left_v2_1"/>
+  <child link="MG996R_servo__3__1"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="0.0294 -0.040306 9.9e-05" rpy="0 0 0"/>
+  <parent link="HQpod_Coxal_Left_v2__1__1"/>
+  <child link="MG996R_servo__7__1"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="-0.04047 0.029174 0.0001" rpy="0 0 0"/>
+  <parent link="HQpod_Coxal_Right_v2_1"/>
+  <child link="MG996R_servo__4__1"/>
+</joint>
+
+<joint name="Rigid 22" type="fixed">
+  <origin xyz="-0.032589 -0.037774 0.0001" rpy="0 0 0"/>
+  <parent link="HQpod_Coxal_Right_v2__1__1"/>
+  <child link="MG996R_servo__5__1"/>
+</joint>
+
+<joint name="Revolute 23" type="revolute">
+  <origin xyz="0.013541 -0.00647 0.012" rpy="0 0 0"/>
+  <parent link="MG996R_servo__2__1"/>
+  <child link="HQpod_Coxal_Right_v2_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 24" type="revolute">
+  <origin xyz="-0.00647 -0.013542 0.012" rpy="0 0 0"/>
+  <parent link="MG996R_servo__1__1"/>
+  <child link="HQpod_Coxal_Left_v2_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 25" type="revolute">
+  <origin xyz="0.003548 -0.010835 -0.034151" rpy="0 0 0"/>
+  <parent link="MG996R_servo__3__1"/>
+  <child link="HQpod_Femur__2__1"/>
+  <axis xyz="0.696501 -0.717556 -1.2e-05"/>
+  <limit upper="1.047198" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 26" type="revolute">
+  <origin xyz="-0.010834 -0.003548 -0.034151" rpy="0 0 0"/>
+  <parent link="MG996R_servo__7__1"/>
+  <child link="HQpod_Femur_1"/>
+  <axis xyz="-0.717556 -0.696501 -1.2e-05"/>
+  <limit upper="1.047198" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 27" type="revolute">
+  <origin xyz="-0.003488 -0.010855 -0.03415" rpy="0 0 0"/>
+  <parent link="MG996R_servo__4__1"/>
+  <child link="HQpod_Femur__1__1"/>
+  <axis xyz="-0.692455 -0.721461 -2e-06"/>
+  <limit upper="1.22173" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 28" type="revolute">
+  <origin xyz="0.010509 -0.00442 -0.03415" rpy="0 0 0"/>
+  <parent link="MG996R_servo__5__1"/>
+  <child link="HQpod_Femur__3__1"/>
+  <axis xyz="0.658365 -0.752699 -2e-06"/>
+  <limit upper="1.22173" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 29" type="revolute">
+  <origin xyz="0.035253 -0.036319 -0.029338" rpy="0 0 0"/>
+  <parent link="HQpod_Femur_1"/>
+  <child link="MG996R_servo__8__1"/>
+  <axis xyz="-0.717556 -0.696501 -1.2e-05"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 30" type="revolute">
+  <origin xyz="-0.038173 -0.033389 -0.029165" rpy="0 0 0"/>
+  <parent link="HQpod_Femur__3__1"/>
+  <child link="MG996R_servo__9__1"/>
+  <axis xyz="0.658365 -0.752699 -2e-06"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 31" type="revolute">
+  <origin xyz="0.036318 0.035254 -0.029338" rpy="0 0 0"/>
+  <parent link="HQpod_Femur__2__1"/>
+  <child link="MG996R_servo__10__1"/>
+  <axis xyz="0.696501 -0.717556 -1.2e-05"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 32" type="revolute">
+  <origin xyz="-0.036588 0.035118 -0.029165" rpy="0 0 0"/>
+  <parent link="HQpod_Femur__1__1"/>
+  <child link="MG996R_servo__11__1"/>
+  <axis xyz="-0.692455 -0.721461 -2e-06"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 33" type="fixed">
+  <origin xyz="0.015879 0.029692 -0.012745" rpy="0 0 0"/>
+  <parent link="MG996R_servo__10__1"/>
+  <child link="HQpod_Tibia_Left_New__1__1"/>
+</joint>
+
+<joint name="Rigid 34" type="fixed">
+  <origin xyz="0.029693 -0.015879 -0.012745" rpy="0 0 0"/>
+  <parent link="MG996R_servo__8__1"/>
+  <child link="HQpod_Tibia_Left_New_1"/>
+</joint>
+
+<joint name="Rigid 35" type="fixed">
+  <origin xyz="-0.027125 -0.010113 -0.021406" rpy="0 0 0"/>
+  <parent link="MG996R_servo__9__1"/>
+  <child link="HQpod_Tibia_Right_New__1__1"/>
+</joint>
+
+<joint name="Rigid 36" type="fixed">
+  <origin xyz="-0.012439 0.02614 -0.021406" rpy="0 0 0"/>
+  <parent link="MG996R_servo__11__1"/>
+  <child link="HQpod_Tibia_Right_New_1"/>
+</joint>
+
+<joint name="Rigid 40" type="fixed">
+  <origin xyz="-0.06169 -0.043015 -0.036591" rpy="0 0 0"/>
+  <parent link="MG996R_servo__6__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__2__1"/>
+</joint>
+
+<joint name="Rigid 41" type="fixed">
+  <origin xyz="-0.015699 0.04755 -0.152114" rpy="0 0 0"/>
+  <parent link="MG996R_servo__5__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned_1"/>
+</joint>
+
+<joint name="Rigid 42" type="fixed">
+  <origin xyz="0.063695 0.206934 0.048288" rpy="0 0 0"/>
+  <parent link="MG996R_servo__9__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__1__1"/>
+</joint>
+
+<joint name="Rigid 43" type="fixed">
+  <origin xyz="-0.109992 -0.142744 -0.12159" rpy="0 0 0"/>
+  <parent link="MG996R_servo__4__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__3__1"/>
+</joint>
+
+<joint name="Rigid 44" type="fixed">
+  <origin xyz="-0.046697 -0.27305 0.031661" rpy="0 0 0"/>
+  <parent link="MG996R_servo__11__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__7__1"/>
+</joint>
+
+<joint name="Rigid 45" type="fixed">
+  <origin xyz="-0.017037 0.049855 0.11472" rpy="0 0 0"/>
+  <parent link="MG996R_servo__2__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__5__1"/>
+</joint>
+
+<joint name="Rigid 46" type="fixed">
+  <origin xyz="0.131629 -0.121988 0.03236" rpy="0 0 0"/>
+  <parent link="MG996R_servo__3__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__8__1"/>
+</joint>
+
+<joint name="Rigid 47" type="fixed">
+  <origin xyz="0.255794 -0.064032 -0.005974" rpy="0 0 0"/>
+  <parent link="MG996R_servo__10__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__4__1"/>
+</joint>
+
+<joint name="Cylindrical 49" type="Cylinderical">
+  <origin xyz="0.404509 0.152975 0.564497" rpy="0 0 0"/>
+  <parent link="HQpod_Coxal_Left_v2_1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__6__1"/>
+</joint>
+
+<joint name="Rigid 50" type="fixed">
+  <origin xyz="-0.074154 0.041336 -0.036633" rpy="0 0 0"/>
+  <parent link="MG996R_servo_1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__10__1"/>
+</joint>
+
+<joint name="Rigid 51" type="fixed">
+  <origin xyz="0.050373 0.035673 0.073492" rpy="0 0 0"/>
+  <parent link="MG996R_servo__7__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__11__1"/>
+</joint>
+
+<joint name="Rigid 52" type="fixed">
+  <origin xyz="0.200155 -0.030607 -0.034916" rpy="0 0 0"/>
+  <parent link="MG996R_servo__8__1"/>
+  <child link="HQpod_Coxal_Servo_Plate_MG996R_pole_repositioned__9__1"/>
+</joint>
+
+<joint name="Rigid 54" type="fixed">
+  <origin xyz="0.028959 0.15 -0.026" rpy="0 0 0"/>
+  <parent link="PowerCompartment_1"/>
+  <child link="PowerCompDoor_1"/>
+</joint>
+
+</robot>

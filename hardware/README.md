@@ -39,7 +39,7 @@ hardware/
 
 | Parameter | Recommended Specification |
 |---|---|
-| **Material** | **PETG** or **ABS/ASA** (PLA is not recommended due to heat dissipation near MG996R servos) |
+| **Material** | **PLA** or **ABS/ASA** (PLA is not recommended due to heat dissipation near MG996R servos) |
 | **Layer Height** | 0.20 mm (Standard Quality) |
 | **Infill Density** | 40% – 50% (Gyroid or Cubic for multidirectional rigidity) |
 | **Perimeters / Walls** | Minimum 4 perimeters (Crucial for servo mount screw threads) |
