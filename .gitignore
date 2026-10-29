@@ -5,6 +5,8 @@
 # --- Large VM Disks, ISOs & VirtualBox Environments (>100MB / Multi-GB) ---
 MAGI/
 MAGI_code/
+MAGI-Development-2/
+MAGI_iti3_urdf/
 Linux/
 VirtualBox VMs/
 *.iso

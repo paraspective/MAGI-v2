@@ -1,45 +1,41 @@
 # Contributing to MAGI
 
-Thank you for your interest in contributing to the **MAGI (Multispectral Autonomous Ground Intelligence)** project!
-
-MAGI is a modular, multi-core quadruped robotics platform combining custom embedded Linux middleware (MAGI OS), ESP32 C++ firmware, Three.js WebGL simulation, and edge computer vision.
+Contributions to the MAGI quadruped project are welcome. Please review the repository structure and workflow before submitting pull requests.
 
 ---
 
-## 🏛️ Repository Architecture & Guidelines
+## Repository Structure
 
-Before submitting contributions, review our organizational architecture:
-
-1. **`hardware/` (Present)**: Production CAD, verified STLs, BOM, and the active ROS 2 URDF description package.
-2. **`firmware/` (Present)**: ESP32 PlatformIO C++ firmware (kinematics, gait engine, IMU, PCA9685).
-3. **`OS/` (Present)**: Core ZeroMQ middleware and multi-process AI inference nodes for Raspberry Pi 4B.
-4. **`simulation/` (Present)**: Three.js WebGL browser simulator and PyBullet kinematics/RL trainers.
-5. **`perception/` (Present)**: PiCamera streaming and MLOps plant pathology training/inference pipeline.
-6. **`archive/` (Past)**: Historical CAD prototypes, deprecated URDF iterations, legacy scripts, and attributed open-source references.
-7. **`ROADMAP.md` & `TODO.md` (Future)**: Active engineering backlog and project milestones.
+- **`firmware/`**: ESP32 C++ PlatformIO application (kinematics, Bézier gait engine, PCA9685, IMU).
+- **`hardware/`**: Mechanical CAD assemblies, production 3D print STLs, BOM, and the official ROS 2 URDF package.
+- **`OS/`**: Raspberry Pi 4B software stack — ZeroMQ middleware and multi-process AI inference nodes.
+- **`perception/`**: Plant pathology computer vision, spectral analysis, and MLOps training pipelines.
+- **`simulation/`**: Three.js WebGL browser simulator and PyBullet physics models.
+- **`docs/`**: Academic paper draft, mathematical derivations, and technical whitepapers.
+- **`archive/`**: Deprecated CAD prototypes, earlier URDF iterations, and reference designs.
 
 ---
 
-## 🌿 Git & Branching Workflow
+## Development Workflow
 
-1. **Fork and Clone**:
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/paraspective/MAGI-Development.git
-   cd MAGI-Development
+   git clone https://github.com/paraspective/MAGI-v2.git
+   cd MAGI-v2
    ```
 
-2. **Branch Naming**:
-   - `feature/<subsystem>-<short-description>` (e.g. `feature/firmware-checksum`, `feature/simulation-terrain`)
-   - `fix/<subsystem>-<bug>` (e.g. `fix/os-zmq-reconnect`)
-   - `docs/<topic>` (e.g. `docs/kinematics-equations`)
+2. **Branch naming**:
+   - `feature/<subsystem>-<description>` (e.g., `feature/firmware-crc16`)
+   - `fix/<subsystem>-<bug>` (e.g., `fix/os-shm-cleanup`)
+   - `docs/<topic>` (e.g., `docs/kinematics-notes`)
 
-3. **Commit Messages**:
-   Follow [Conventional Commits](https://www.conventionalcommits.org/):
+3. **Commit messages**:
+   Use standard conventional commits:
    - `feat(firmware): add crc16 validation to uart protocol`
-   - `fix(os): resolve posix shared memory unmap leak`
-   - `docs(hardware): update 3d printing slicer profile parameters`
+   - `fix(os): handle zmq socket reconnection timeout`
+   - `docs(hardware): update 3d printing parameters for petg`
 
-4. **Code Quality**:
+4. **Code standards**:
    - Python code must conform to PEP 8 standards.
-   - C++ firmware must compile cleanly via `pio run` without compiler warnings.
-   - Files over 50 MB should not be checked into Git without maintainer approval.
+   - C++ firmware should compile with `pio run` without warnings.
+   - Never commit large binaries (>50MB) or uncompressed datasets directly to Git.

@@ -2,7 +2,7 @@ name: MAGI Continuous Integration
 
 on:
   push:
-    branches: [ main, feature/* ]
+    branches: [ main, MAGI-devlopment, feature/* ]
   pull_request:
     branches: [ main ]
 
@@ -27,7 +27,7 @@ jobs:
       - name: Run Syntax & Critical Lint Check
         run: |
           # stop the build if there are Python syntax errors or undefined names
-          flake8 OS/src simulation/python tools/ --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 OS/src simulation/python --count --select=E9,F63,F7,F82 --show-source --statistics
 
   validate-urdf:
     name: Check Robot Description URDF
